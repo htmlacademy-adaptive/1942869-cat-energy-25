@@ -45,29 +45,29 @@
       <section class="programms">
         <div class="programms__wrapper">
           <header class="programms__header">
-            <h2 class="programms__title">Подбор программы</h2>
-            <p class="programmssubtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <h2 class="programms__header-title">Подбор программы</h2>
+            <p class="programms__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </header>
-          <form class="programms-form" action="https://echo.htmlacademy.ru/" method="post">
-            <section class="programms__form login-form">
+          <form class="programms__form login-form" action="https://echo.htmlacademy.ru/" method="post">
+            <section class="login-form__pet-data">
               <h3 class="visually-hidden">Данные о домашнем питомце.</h3>
               <p class="login-form__name">
                 <label class="login-form__label" for="name">Имя:&#42;</label>
-                <input class="login-form__text" type="text" id="name" name="name" value="Барсик" required>
+                <input class="login-form__content" type="text" id="name" name="name" value="Барсик" required>
               </p>
               <p class="login-form__weight">
                 <label class="login-form__label" for="weight">Вес(кг):&#42;</label>
-                <input class="login-form__number" type="text" id="weight" name="weight" value="7" required>
+                <input class="login-form__content" type="text" id="weight" name="weight" value="7" required>
               </p>
               <p class="login-form__age">
                 <label class="login-form__label" for="age">Возраст(лет):</label>
-                <input class="login-form__numbe" type="text" id="age" name="age" value="7">
+                <input class="login-form__content" type="text" id="age" name="age" value="7">
               </p>
             </section>
-            <section class="programms__selection programm-filter">
-              <fieldset class="programm-filter__group">
+            <section class="login-form__programm-filter">
+              <fieldset class="login-form__group">
                 <legend class="visually-hidden">Выбор программы</legend>
-                <ul class="programm-filter__list">
+                <ul class="login-form__list programm-filter">
                   <li class="programm-filter__item">
                     <label class="programm-filter__label">
                       <input class="visually-hidden programm-filter__input" type="radio" name="programm" value="weight-loss" checked>
@@ -92,30 +92,30 @@
                 </ul>
               </fieldset>
             </section>
-            <section class="programms__owner owner-information">
-              <fieldset class="owner-information__group">
-                <legend class="owner-information__title">Контактные данные (владельца кота)</legend>
-                <p class="owner-information__email">
-                  <label class="owner-information__form-label" for="owner-email">E-mail:&#42;</label>
-                  <input class="field" type="text" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+            <section class="login-form__owner">
+              <fieldset class="login-form__owner-information">
+                <legend class="login-form__title">Контактные данные (владельца кота)</legend>
+                <p class="login-form__email">
+                  <label class="login-form__label" for="owner-email">E-mail:&#42;</label>
+                  <input class="login-form__field" type="text" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
                 </p>
-                <p class="owner-information__phone">
-                  <label class="owner-information__form-label" for="owner-phone"> Телефон:&#42;</label>
-                  <input class="field" type="text" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+                <p class="login-form__phone">
+                  <label class="login-form__label" for="owner-phone"> Телефон:&#42;</label>
+                  <input class="login-form__field" type="text" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
                 </p>
               </fieldset>
             </section>
-            <section class="programms__comments comment">
-              <fieldset class="comment__text">
-                <legend class="comment__title">Комментарий</legend>
+            <section class="login-form__comments">
+              <fieldset class="login-form__note">
+                <legend class="login-form__title">Комментарий</legend>
                 <label class="visually-hidden" for="note"></label>
-                <textarea class="comment__note" id="note" name="note" rows="6">Расскажите обо всех повадках кота</textarea>
+                <textarea class="login-form__text" id="note" name="note" rows="6">Расскажите обо всех повадках кота</textarea>
               </fieldset>
             </section>
-            <section class="programms__additional-products additional-group">
-              <fieldset class="additional-group__products">
-                <legend class="additional-group__title">Дополнительно</legend>
-                <ul class="additional-group__items additional-list">
+            <section class="login-form__additional-products">
+              <fieldset class="login-form__additional-group">
+                <legend class="login-form__title">Дополнительно</legend>
+                <ul class="login-form__list additional-list">
                   <li class="additional-list__item">
                     <label class="additional-list__label">
                       <input class="visually-hidden additional-list__input" type="checkbox" name="sweetener" checked>
@@ -147,9 +147,9 @@
                 </ul>
               </fieldset>
             </section>
-            <div class="programms__send-data">
-              <button class="programms__submit button" type="submit">Отправить заявку</button>
-              <small class="programms__legend programms__legend--bottom">* — Обязательные поля</small>
+            <div class="login-form__send">
+              <button class="login-form__submit button" type="submit">Отправить заявку</button>
+              <small class="login-form__legend login-form__legend--bottom">* — Обязательные поля</small>
             </div>
           </form>
         </div>
@@ -162,7 +162,7 @@
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="main-footer__location">
-          <iframe src="https://www.google.com/maps/d/embed?mid=1LKB7LotwXf6FdBdkPBkLYZYyKUSkcuPP&ehbc=2E312F" width="100%" height="362"></iframe>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1LKB7LotwXf6FdBdkPBkLYZYyKUSkcuPP&ehbc=2E312F" width="320" height="362"></iframe>
         </div>
         <a class="main-logo">
           <img class="main-logo-image" src="img/main-logo-cat-energy.svg" width="101" height="18" alt="Главный логотип «Cat energy»">
