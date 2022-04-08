@@ -1,0 +1,40 @@
+.products-list {
+  font-family: "OswaldRegular";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.products-list__item--slim {
+  background-color: url(../../img/black-cat-1.svg);
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
+}
+
+.products-list__item--slim::before {
+  width: 50px;
+  height: 50px;
+  background: $lightgreen;
+  border-radius: 50%;
+}
+
+
+.products-list__title {
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.products-list__description {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-link__link {
+  font-family: "OswaldRegular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+}

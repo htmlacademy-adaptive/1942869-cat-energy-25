@@ -1,1 +1,9 @@
-// Начните писать стили здесь
+@import "./global/variables.scss";
+@import "./block/main-header.scss";
+@import "./block/main-navigation.scss";
+@import "./block/main-logo.scss";
+@import "./block/preview.scss";
+@import "./block/products-list.scss";
+@import "./global/global.scss";
+@import "./global/fonts.scss";
+@import "./block/page.scss";

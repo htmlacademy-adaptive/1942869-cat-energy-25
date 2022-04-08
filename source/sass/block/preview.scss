@@ -1,0 +1,27 @@
+.preview {
+  background-color: #ffffff;
+}
+
+.preview__header {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url(../../img/index-background/index-background-cat.jpg);
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: center;
+  position: relative;
+
+  &::after {
+  position: absolute;
+  opacity: 0.3;
+  }
+}
+
+.preview__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+}

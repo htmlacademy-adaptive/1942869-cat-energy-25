@@ -1,0 +1,17 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin: 0 20px;
+}
+
+.main-header__logo {
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
