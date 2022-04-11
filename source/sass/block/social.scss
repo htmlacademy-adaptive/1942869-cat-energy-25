@@ -1,0 +1,10 @@
+.social__list {
+  display: flex;
+  text-decoration: none;
+}
+
+.social__link--vkontakte {
+  background-image: url("../../img/social/vkontakte.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 17px;
+}

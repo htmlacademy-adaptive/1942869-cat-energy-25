@@ -1,40 +1,75 @@
 .products-list {
-  font-family: "OswaldRegular";
+  font-family: "OswaldRegular",sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.products-list__item--slim {
-  background-color: url(../../img/black-cat-1.svg);
-  background-repeat: no-repeat;
-  background-size: 36px 50px;
+.products-list__item {
+  position: relative;
+  background-color: #f2f2f2;
 }
-
-.products-list__item--slim::before {
-  width: 50px;
-  height: 50px;
-  background: $lightgreen;
-  border-radius: 50%;
-}
-
 
 .products-list__title {
   font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
+  padding: 30px 79px 29px 91px;
+  position: relative;
+  color: #000000;
+}
+
+.products-list__title::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:  #68B738;
+  right: 0;
+  bottom: 0;
+  left: 19px;
+  bottom: 0;
+  z-index: 1;
 }
 
 .products-list__description {
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
 }
 
 .catalog-link__link {
   font-family: "OswaldRegular";
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.catalog-link__link-icon {
+  fill: #000000;
+
+  &:hover {
+    fill: #000000;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
 }

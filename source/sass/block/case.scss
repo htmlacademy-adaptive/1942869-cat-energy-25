@@ -1,0 +1,42 @@
+.case {
+  font-family: "OswaldRegular",sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background-color:  #EAEAEA;
+}
+
+.case__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.case__description {
+  font-family: "Arial",sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkgrey;
+}
+
+.case__result {
+  display: flex;
+  list-style-type: none;
+}
+
+.case__number {
+  text-transform: uppercase;
+}
+
+.case__text {
+  font-family: "Arial",sans-serif;
+  font-weight: 400;
+  color: #C4C4C4;
+}
+
+.case__cost {
+  font-family: "OswaldRegular",sans-serif;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
