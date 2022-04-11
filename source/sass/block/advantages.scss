@@ -1,5 +1,5 @@
 .advantages {
-  font-family: "OswaldRegular",sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   color: #000000;
 }
@@ -15,9 +15,9 @@
 }
 
 .advantages__items {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
-  color: #444444;
+  color: $darkgrey;
   font-size: 14px;
   line-height: 18px;
   list-style-type: none;

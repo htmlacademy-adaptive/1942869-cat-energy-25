@@ -22,7 +22,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border: 2px solid #CDCDCD;
+  border: 2px solid #cdcdcd;
 }
 
 .programm-filter__input[type="radio"]:checked + .programm-filter__mark::before {
@@ -34,7 +34,7 @@
   bottom: 0;
   width: 18px;
   height: 18px;
-  background-color: #68B738;
+  background-color: #68b738;
   border-radius: 50%;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .programm-filter:hover .programm-filter__mark {
-  border: 2px solid #BABABA;
+  border: 2px solid #bababa;
 }
 
 .programm-filter__input[type="checkbox"]:checked + .programm-filter__mark::before {
@@ -54,7 +54,7 @@
   left: 2px;
   top: 17px;
   transform: rotate(45deg);
-  background-color: #68B738;
+  background-color: #68b738;
 }
 
 .programm-filter__input[type="checkbox"]:checked + .programm-filter__mark::after {
@@ -65,5 +65,5 @@
   left: 7px;
   top: 14px;
   transform: rotate(-45deg);
-  background-color: #68B738;
+  background-color: #68b738;
 }

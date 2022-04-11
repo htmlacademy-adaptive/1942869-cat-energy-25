@@ -1,5 +1,5 @@
 .products-list {
-  font-family: "OswaldRegular",sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -28,24 +28,23 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color:  #68B738;
+  background-color: #68b738;
   right: 0;
   bottom: 0;
   left: 19px;
-  bottom: 0;
   z-index: 1;
 }
 
 .products-list__description {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $darkgrey;
 }
 
 .catalog-link__link {
-  font-family: "OswaldRegular";
+  font-family: "OswaldRegular", sans-serif;
   color: #000000;
   font-weight: 400;
   font-size: 16px;
