@@ -4,6 +4,12 @@
   height: 290px;
   position: relative;
   z-index: 0;
+  margin: 35px 20px;
+}
+
+.bonus__wrapper {
+  padding: 0 20px;
+  margin: 0;
 }
 
 .bonus::after {
@@ -14,24 +20,24 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../../img/bonus-background-cat.jpg");
+  background-image: url("..//..//img//bonus-background-cat.jpg");
   background-repeat: no-repeat;
-  background-size: 280px  290px;
+  background-size: 100% 100%;
   background-position: center;
-  width: 100%;
-  height: 100%;
   opacity: 0.2;
   z-index: -1;
 }
 
 .bonus__text {
+  display: block;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0;
+  padding: 190px 40px 30px;
 }
 
 .bonus__text::before {
@@ -41,8 +47,8 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-image: url("../../img/bonus-icon.svg");
+  bottom: 60px;
+  background-image: url("..//..//img//bonus-icon.svg");
   background-repeat: no-repeat;
   background-size: 78px  80px;
   background-position: center;

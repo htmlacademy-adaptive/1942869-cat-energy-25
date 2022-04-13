@@ -1,3 +1,15 @@
+.catalog-products__wrapper {
+  padding: 0 20px;
+  margin: 0;
+}
+
 .catalog-products__product-card {
-  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

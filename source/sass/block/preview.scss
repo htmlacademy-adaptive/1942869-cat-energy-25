@@ -3,7 +3,8 @@
 }
 
 .preview__wrapper {
-  margin: 0 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .preview__header {
@@ -28,9 +29,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../../img/index-background/index-background-cat.jpg");
+  background-image: url("..//..//img//index-background//index-background-cat.jpg");
   background-repeat: no-repeat;
-  background-size: 320px 302px;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -57,16 +57,7 @@
 }
 
 .preview__user {
-  font-family: inherit;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-align: center;
-  color: #ffffff;
-  background-color: #68b738;
-  border: none;
-  cursor: pointer;
-  padding: 14px 20px;
+  width: 280px;
+  padding: 7px 44px;
+  margin: 3px 20px 20px;
 }
