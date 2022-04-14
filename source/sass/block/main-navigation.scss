@@ -1,0 +1,21 @@
+.main-navigation {
+  width: 100%;
+  position: relative;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 24px;
+  height: 18px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("..//..//img//header//menu-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}

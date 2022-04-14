@@ -1,0 +1,57 @@
+.login-form {
+  text-transform: uppercase;
+}
+
+.login-form__info {
+  display: flex;
+}
+
+.login-form__title input {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: #000000;
+}
+
+.login-form__content {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $darkgrey;
+  text-transform: uppercase;
+  flex-grow: 1;
+
+  &--textarea {
+    width: 100%;
+  }
+}
+
+.login-form__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.login-form__send {
+  margin-bottom: 42px;
+}
+
+.login-form__submit {
+  width: 280px;
+  padding: 7px 44px;
+  margin: 34px 0 21px;
+}
+
+.login-form__legend {
+  display: block;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: #000000;
+}

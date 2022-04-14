@@ -1,0 +1,57 @@
+.main-footer {
+  padding: 0;
+  margin: 0;
+}
+
+.main-footer__contact {
+  display: flex;
+  padding: 26px 20px;
+}
+
+.main-footer__info {
+  display: block;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 30px 20px;
+  margin: 0;
+}
+
+.main-footer__main-logo {
+  height: 24px;
+}
+
+.main-footer__contact-title {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-footer__contact-text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $darkgrey;
+}
+
+.main-footer__social {
+  margin-left: 90px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $darkgrey;
+  text-decoration: none;
+}

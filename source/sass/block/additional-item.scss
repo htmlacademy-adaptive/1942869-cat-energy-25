@@ -1,0 +1,21 @@
+.additional-item__text {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-item__quantity,
+.additional-item__price {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $darkgrey;
+}
+
+.additional-item__button {
+  padding: 10px 109px;
+}
