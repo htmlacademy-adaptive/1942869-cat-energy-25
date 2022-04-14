@@ -10,7 +10,7 @@
 .preview__header {
   color: #ffffff;
   height: auto;
-  margin-bottom: 27px;
+  position: relative;
 }
 
 .preview-background {
@@ -38,6 +38,21 @@
   z-index: -1;
 }
 
+.preview__header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("..//..//img//index-background//index-cat-product.png");
+  background-repeat: no-repeat;
+  background-size: 280px 270px;
+  background-position: center;
+  z-index: 1;
+}
+
 .preview__title {
   font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
@@ -59,5 +74,5 @@
 .preview__user {
   width: 280px;
   padding: 7px 44px;
-  margin: 3px 20px 20px;
+  margin: 138px 20px 20px;
 }
