@@ -92,7 +92,7 @@
     margin: 0;
 
     &::after {
-    background-image: none;
+      background-image: none;
     }
   }
 
@@ -157,18 +157,5 @@
     width: 50%;
     height: 100%;
     margin: 0;
-  }
-
-  .preview__header {
-    position: relative;
-
-    &::before {
-      width: 552px;
-      height: 499px;
-      top: 0;
-      left: 550px;
-      right: 0;
-      bottom: 0;
-    }
   }
 }

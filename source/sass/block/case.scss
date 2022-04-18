@@ -69,20 +69,6 @@
   right: 0;
   bottom: 0;
   background-image: url("..//..//img//index-background//index-cat-fat.png");
-  background: linear-gradient(to right, transparent 50%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 280px 232px;
-}
-
-.case__cat-fat::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(to left, transparent 50%, url("..//..//img//index-background//index-cat-slim.png") 50%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 232px;
@@ -138,7 +124,7 @@
 
 @media (min-width: $desktop-width) {
   .case {
-  padding: 0 110px;
+    padding: 0 110px;
   }
 
   .case__wrapper {
