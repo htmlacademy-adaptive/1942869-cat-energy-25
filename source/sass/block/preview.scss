@@ -48,7 +48,8 @@
   bottom: 0;
   background-image: url("..//..//img//index-background//index-cat-product.png");
   background-repeat: no-repeat;
-  background-size: 280px 270px;
+  width: 280px;
+  height: 270px;
   background-position: center;
   z-index: 1;
 }
@@ -57,7 +58,6 @@
   font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  text-align: center;
   line-height: 36px;
   margin: 0;
 }
@@ -67,7 +67,7 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 27px 61px;
+  padding: 27px 61px 20px 61px;
   margin: 0;
 }
 
@@ -75,4 +75,100 @@
   width: 280px;
   padding: 7px 44px;
   margin: 138px 20px 20px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .preview__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .preview-background {
+    color: #000000;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    &::after {
+    background-image: none;
+    }
+  }
+
+  .preview__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    padding: 0 150px 0 100px;
+  }
+
+  .preview__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 100px;
+  }
+
+  .preview__header {
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      width: 550px;
+      height: 520px;
+      top: 70px;
+      left: 150px;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  .preview__user {
+    margin: 20px 380px 300px 100px;
+    width: 240px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .preview__header {
+    position: relative;
+    padding: 0 110px;
+
+    &::before {
+      width: 552px;
+      height: 499px;
+      top: 0;
+      left: 150px;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  .preview-background {
+    color: #000000;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .preview__header {
+    position: relative;
+
+    &::before {
+      width: 552px;
+      height: 499px;
+      top: 0;
+      left: 550px;
+      right: 0;
+      bottom: 0;
+    }
+  }
 }
