@@ -5,6 +5,7 @@
 }
 
 .advantages__wrapper {
+  max-width: 280px;
   padding: 0 20px;
   margin: 0;
 }
@@ -25,9 +26,10 @@
 }
 
 .advantages__item {
+  min-height: 60px;
   position: relative;
-  margin-bottom: 20px;
-  padding: 20px 0;
+  margin-bottom: 24px;
+  padding: 0;
 }
 
 .advantages__description {
@@ -145,6 +147,7 @@
   }
 
   .advantages__wrapper {
-    margin: 0 100px;
+    margin: 0;
+    padding: 0 110px;
   }
 }

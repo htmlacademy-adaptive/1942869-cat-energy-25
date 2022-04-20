@@ -26,8 +26,9 @@
 
 .case__result {
   display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .case__number {
@@ -36,6 +37,9 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  padding: 5px 15px;
+  border: 1px solid #cdcdcd;
+  margin-right: 30px;
 }
 
 .case__text {
@@ -84,21 +88,36 @@
   }
 
   .case__title {
-    font-size: 36px;
-    line-height: 40px;
-    padding-left: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+  }
+
+  .case__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 51px 0 0 0;
   }
 
   .case__results {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  .case__result {
+    margin: 0;
+    padding: 0;
   }
 
   .case__number {
     font-size: 30px;
     line-height: 37px;
     text-transform: uppercase;
+    margin-right: 42px;
+    padding: 15px 20px;
   }
 
   .case__text {
@@ -109,6 +128,7 @@
   .case__cost {
     font-size: 20px;
     line-height: 20px;
+    padding: 0 0 0;
   }
 
   .case__cats-image {
@@ -128,20 +148,33 @@
   }
 
   .case__wrapper {
+    padding: 0;
+  }
+
+  .case__information {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .case__results {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+  }
+
+  .case__result {
+    margin: 69px 0 0 0;
+    padding: 0;
   }
 
   .case__title {
     font-size: 36px;
     line-height: 40px;
-    padding-left: 30px;
   }
 
   .case__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 800px 0 0;
+    padding: 0 784px 0 0;
+    margin: 70px 0 0 0;
   }
 }
