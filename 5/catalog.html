@@ -8,39 +8,44 @@
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy»">
-      </a>
-      <a class="main-logo">
-        <img class="main-logo__image" src="img/main-logo-cat-energy.svg" width="101" height="18" alt="Главный логотип «Cat Energy»">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-navigation__wrapper">
-          <button class="main-navigation__close-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
+      <div class="main-header__wrapper">
+        <section class="main-header__logo-box">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+              <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+              <img src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy»">
+            </picture>
+          </a>
+          <a class="main-header__main-logo main-logo">
+            <img class="main-logo__image" src="img/main-logo-cat-energy.svg" width="101" height="18" alt="Главный логотип «Cat Energy»">
+          </a>
+        </section>
+        <nav class="main-navigation main-navigation--closed">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <div class="main-navigation__wrapper">
+            <ul class="main-navigation__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="min-inner-catalog main-container">
       <h1 class="visually-hidden">Каталог продукции «Cat Energy»</h1>
