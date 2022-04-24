@@ -1,21 +1,132 @@
 .main-navigation {
+  width: auto;
+}
+
+.main-navigation__wrapper {
   width: 100%;
   position: relative;
 }
 
 .main-navigation__toggle {
   position: absolute;
+  display: block;
   padding: 0;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  top: 24px;
+  right: 20px;
   width: 24px;
   height: 18px;
-  background-color: #ffffff;
   border: none;
-  background-image: url("..//..//img//header//menu-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-navigation--closed .main-navigation__toggle:hover::before {
+  background-color: #666666;
+  box-shadow: 0 8px 0 0 #666666, 0 16px 0 0 #666666;
+}
+
+.main-navigation--closed .main-navigation__toggle:focus::before {
+  background-color: #d9d9d9;
+  box-shadow: 0 8px 0 0 #d9d9d9, 0 16px 0 0 #d9d9d9;
+}
+
+.main-navigation--closed .main-navigation__toggle:active::before {
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  top: 16px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #666666;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background-color: #d9d9d9;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #000000;
+  }
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-navigation--closed .site-list {
+    display: none;
+  }
+
+  .main-navigation--opened .main-navigation__wrapper {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 80vh;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__wrapper {
+    width: 460px;
+    margin: 0;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__close-button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__wrapper {
+    width: 610px;
+    margin: 0;
+  }
 }

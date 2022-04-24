@@ -1,13 +1,22 @@
-.main-header {
+.main-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
+  flex-direction: column;
   padding: 10px 20px;
-  margin: 0;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.main-header__logo {
-  height: 38px;
+.main-header__logo-box {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__logo img {
+  display: block;
 
   &:hover {
     opacity: 0.8;
@@ -15,5 +24,52 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    width: 768px;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 30px;
+  }
+
+  .main-header__logo img {
+    height: 52px;
+    width: 174px;
+  }
+
+  .main-header__main-logo {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    width: 1440px;
+    justify-content: space-between;
+    padding: 53px 110px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("..//..//img//index-background//index-background-cat-desktop.jpg");
+      background-repeat: no-repeat;
+      width: 720px;
+      height: 696px;
+      top: 0;
+      left: 718px;
+      right: 0;
+      bottom: 0;
+      opacity: 0.2;
+    }
+  }
+
+  .main-header__logo img {
+    height: 59px;
+    width: 202px;
+    z-index: 1;
   }
 }
