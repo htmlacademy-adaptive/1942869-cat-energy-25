@@ -37,20 +37,20 @@
   color: #ffffff;
   margin: 0;
   padding: 190px 40px 30px;
-}
 
-.bonus__text::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 60px;
-  background-image: url("..//..//img//bonus-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 78px  80px;
-  background-position: center;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    background-image: url("..//..//img//bonus-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 78px  80px;
+    background-position: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -61,10 +61,26 @@
   }
 
   .bonus__wrapper {
-    margin: 0 40px;
+    margin: 69px 30px 76px;
     background-color: rgba(104, 183, 56, 0.85);
     height: 200px;
     box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("..//..//img//bonus-background-cat-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: 707px 200px;
+      background-position: center;
+      opacity: 0.2;
+      z-index: -1;
+    }
   }
 
   .bonus__text {
@@ -74,15 +90,15 @@
     color: #ffffff;
     margin: 0;
     padding: 71px 124px 69px 422px;
-  }
 
-  .bonus__text::before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 60px;
-    background-size: 80px  83px;
-    background-position: center;
+    &::before {
+      top: 0;
+      left: 0;
+      right: 365px;
+      bottom: 0;
+      background-size: 80px  83px;
+      background-position: center;
+    }
   }
 }
 
@@ -94,9 +110,25 @@
   }
 
   .bonus__wrapper {
-    margin: 94px 0 0 0;
+    margin: 94px 0 87px 0;
     padding: 0;
     height: 289px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("..//..//img//bonus-background-cat.jpg");
+      background-repeat: no-repeat;
+      background-size: 245px 290px;
+      background-position: center;
+      opacity: 0.2;
+      z-index: -1;
+    }
   }
 
   .bonus__text {
@@ -106,5 +138,13 @@
     color: #ffffff;
     margin: 0;
     padding: 170px 40px 0 40px;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 60px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.main-footer__contact {
+.main-footer__contact-wrapper {
   width: 320px;
   margin: 0 auto;
   display: flex;
@@ -68,7 +68,12 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__contact {
-    background-color: #ffffff;
+    &--dark {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .main-footer__contact-wrapper {
     width: 768px;
     padding: 56px 70px;
   }
@@ -115,7 +120,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer__contact {
+  .main-footer__contact-wrapper {
     width: 1440px;
     padding: 56px 110px;
   }
