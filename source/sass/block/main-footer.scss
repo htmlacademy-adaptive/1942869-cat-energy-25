@@ -41,7 +41,7 @@
 }
 
 .main-footer__location iframe {
-  width: 320px;
+  height: 362px;
   margin: 0 auto;
   border: none;
   display: block;
@@ -88,8 +88,7 @@
   }
 
   .main-footer__location iframe {
-    width: 768px;
-    height: 400px;
+    height: 396px;
   }
 
   .main-footer__info {
@@ -118,13 +117,12 @@
 @media (min-width: $desktop-width) {
   .main-footer__contact {
     width: 1440px;
+    padding: 56px 110px;
   }
 
   .main-footer__location iframe {
-    width: 1440px;
     height: 400px;
   }
-
 
   .main-footer__info-wrapper {
     width: 1440px;

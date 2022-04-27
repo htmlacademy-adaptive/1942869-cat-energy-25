@@ -50,20 +50,26 @@
     width: 1440px;
     justify-content: space-between;
     padding: 53px 110px;
-    position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("..//..//img//index-background//index-background-cat-desktop.jpg");
-      background-repeat: no-repeat;
-      width: 720px;
-      height: 696px;
-      top: 0;
-      left: 718px;
-      right: 0;
-      bottom: 0;
-      opacity: 0.2;
+    &--background {
+      width: 1440px;
+      justify-content: space-between;
+      padding: 53px 110px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("..//..//img//index-background//index-background-cat-desktop.jpg");
+        background-repeat: no-repeat;
+        width: 720px;
+        height: 696px;
+        top: 0;
+        left: 718px;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+      }
     }
   }
 
