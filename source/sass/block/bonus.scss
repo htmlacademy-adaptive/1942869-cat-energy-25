@@ -1,31 +1,30 @@
 .bonus {
-  background-color: rgba(104, 183, 56, 0.85);
-  width: 280px;
-  height: 290px;
-  position: relative;
-  z-index: 0;
-  margin: 35px 20px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .bonus__wrapper {
-  padding: 0 20px;
-  margin: 0;
-}
+  height: 290px;
+  position: relative;
+  background-color: rgba(104, 183, 56, 0.85);
+  z-index: 0;
+  margin: 0 30px;
 
-.bonus::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("..//..//img//bonus-background-cat.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  opacity: 0.2;
-  z-index: -1;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("..//..//img//bonus-background-cat.jpg");
+    background-repeat: no-repeat;
+    background-size: 280px 290px;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+  }
 }
 
 .bonus__text {
@@ -38,18 +37,114 @@
   color: #ffffff;
   margin: 0;
   padding: 190px 40px 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    background-image: url("..//..//img//bonus-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 78px  80px;
+    background-position: center;
+  }
 }
 
-.bonus__text::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 60px;
-  background-image: url("..//..//img//bonus-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 78px  80px;
-  background-position: center;
+@media (min-width: $tablet-width) {
+  .bonus {
+    width: 768px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .bonus__wrapper {
+    margin: 69px 30px 76px;
+    background-color: rgba(104, 183, 56, 0.85);
+    height: 200px;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("..//..//img//bonus-background-cat-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: 707px 200px;
+      background-position: center;
+      opacity: 0.2;
+      z-index: -1;
+    }
+  }
+
+  .bonus__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    color: #ffffff;
+    margin: 0;
+    padding: 71px 124px 69px 422px;
+
+    &::before {
+      top: 0;
+      left: 0;
+      right: 365px;
+      bottom: 0;
+      background-size: 80px  83px;
+      background-position: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus {
+    width: 245px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bonus__wrapper {
+    margin: 94px 0 87px 0;
+    padding: 0;
+    height: 289px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("..//..//img//bonus-background-cat.jpg");
+      background-repeat: no-repeat;
+      background-size: 245px 290px;
+      background-position: center;
+      opacity: 0.2;
+      z-index: -1;
+    }
+  }
+
+  .bonus__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 170px 40px 0 40px;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 60px;
+    }
+  }
 }

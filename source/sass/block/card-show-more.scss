@@ -50,9 +50,24 @@
 @media (min-width: $tablet-width) {
   .card-show-more {
     align-items: center;
+    justify-content: center;
   }
 
   .card-show-more__show-all {
     margin-top: 33px;
+  }
+
+  .card-show-more__title {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .card-show-more__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0 50px;
   }
 }

@@ -2,37 +2,79 @@
   text-transform: uppercase;
 }
 
+.login-form__pet-data {
+  padding-bottom: 10px;
+}
+
 .login-form__info {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 14px 0;
 }
 
-.login-form__title input {
-  font-family: "OswaldRegular", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  text-transform: none;
-  color: #000000;
-}
-
+.login-form__label,
 .login-form__content {
   font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $darkgrey;
-  text-transform: uppercase;
+}
+
+.login-form__content {
+  padding: 13px 15px;
+  box-sizing: border-box;
   flex-grow: 1;
+  margin-left: 12px;
+  border: 1px solid #e7e7e7;
+  text-transform: uppercase;
 
   &--textarea {
     width: 100%;
+    margin: 0;
+    margin-top: 37px;
   }
+}
+
+.login-form__note {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.login-form__programm-filter {
+  margin-bottom: 26px;
+}
+
+.login-form__group {
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0 0 0;
 }
 
 .login-form__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 0;
+}
+
+.login-form__owner-information {
+  border: none;
+  padding: 35px 0 23px 0;
+}
+
+.login-form__title {
+  padding-right: 83px;
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
 }
 
 .login-form__send {
@@ -54,4 +96,102 @@
   line-height: 16px;
   text-transform: none;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .login-form__label,
+  .login-form__content {
+    font-family: "OswaldRegular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $darkgrey;
+  }
+
+  .login-form__content {
+    padding: 11px 19px;
+  }
+
+  .login-form__title {
+    padding-right: 83px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .login-form__send {
+    display: flex;
+    align-items: center;
+  }
+
+  .login-form__submit {
+    width: 282px;
+    margin: 20px 42px 0 0;
+    font-size: 20px;
+    padding: 13px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .login-form__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 568px);
+    grid-template-rows: 200px;
+    column-gap: 80px;
+    margin-bottom: 69px;
+  }
+
+  .login-form__programm-filter {
+    padding: 0;
+    margin: 0;
+  }
+
+  .login-form__label,
+  .login-form__content {
+    margin-bottom: 13px;
+  }
+
+  .login-form__group {
+    padding: 21px 25px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .login-form__owner-information {
+    display: grid;
+    grid-template-columns: repeat(2, 568px);
+    column-gap: 78px;
+    padding: 72px 0 69px 0;
+  }
+
+  .login-form__info {
+    margin: 0;
+  }
+
+  .login-form__additional-products .login-form__group {
+    border: none;
+    padding: 20px 0 0 0;
+  }
+
+  .login-form__additional-products .programm-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 57px 0 61px 0;
+  }
+
+  .login-form__additional-products .programm-filter__item {
+    padding: 0;
+    margin: 0;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  .login-form__submit {
+    width: 568px;
+    font-size: 20px;
+    padding: 13px 188px;
+    margin: 0 81px 0 0;
+  }
 }

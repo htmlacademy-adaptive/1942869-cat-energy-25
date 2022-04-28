@@ -1,4 +1,4 @@
-.main-footer__contact {
+.main-footer__contact-wrapper {
   width: 320px;
   margin: 0 auto;
   display: flex;
@@ -41,7 +41,7 @@
 }
 
 .main-footer__location iframe {
-  width: 320px;
+  height: 362px;
   margin: 0 auto;
   border: none;
   display: block;
@@ -68,7 +68,12 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__contact {
-    background-color: #ffffff;
+    &--dark {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .main-footer__contact-wrapper {
     width: 768px;
     padding: 56px 70px;
   }
@@ -88,8 +93,7 @@
   }
 
   .main-footer__location iframe {
-    width: 768px;
-    height: 400px;
+    height: 396px;
   }
 
   .main-footer__info {
@@ -116,15 +120,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer__contact {
+  .main-footer__contact-wrapper {
     width: 1440px;
+    padding: 56px 110px;
   }
 
   .main-footer__location iframe {
-    width: 1440px;
     height: 400px;
   }
-
 
   .main-footer__info-wrapper {
     width: 1440px;

@@ -19,7 +19,6 @@
 
 .site-list__link {
   text-decoration: none;
-  color: #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,6 +59,14 @@
     margin: 0;
     padding: 0;
     padding-left: 100px;
+
+    &--white .site-list__item {
+      color: #ffffff;
+    }
+
+    &--dark .site-list__item {
+      color: #000000;
+    }
   }
 
   .site-list__item {
@@ -78,9 +85,5 @@
       height: 2px;
       background-color: #ffffff;
     }
-  }
-
-  .site-list__link {
-    color: #ffffff;
   }
 }

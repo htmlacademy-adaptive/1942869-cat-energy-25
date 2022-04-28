@@ -55,6 +55,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .product-card__content {
@@ -67,5 +68,20 @@
 
   .product-card__table {
     padding-left: 38px;
+  }
+
+  .product-card__button {
+    width: 248px;
+    padding: 10px 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card__common {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+    box-sizing: border-box;
+    display: flex;
   }
 }

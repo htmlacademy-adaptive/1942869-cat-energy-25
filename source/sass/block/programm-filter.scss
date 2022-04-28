@@ -1,11 +1,16 @@
 .programm-filter {
   margin: 0;
+  margin-top: 34px;
   padding: 0;
   list-style-type: none;
 }
 
 .programm-filter__item {
   margin-bottom: 13px;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .programm-filter__label {
@@ -66,4 +71,53 @@
   top: 14px;
   transform: rotate(-45deg);
   background-color: #68b738;
+}
+
+.programm-filter__text {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .programm-filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .programm-filter__item {
+    margin: 0 120px 42px 0;
+
+    &:nth-child(3) {
+      margin-right: 212px;
+    }
+  }
+
+  .programm-filter__label {
+    line-height: 40px;
+    padding-left: 40px;
+    margin: 0;
+  }
+
+  .programm-filter__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-filter {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .programm-filter__item {
+    margin: 0;
+    margin-bottom: 13px;
+  }
 }

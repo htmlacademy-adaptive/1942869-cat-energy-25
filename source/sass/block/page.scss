@@ -12,6 +12,12 @@
   color: #000000;
 }
 
+@media (min-width: $mobile-width-only) {
+  .page__body {
+    min-width: 320px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page__body {
     min-width: 768px;

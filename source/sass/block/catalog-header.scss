@@ -1,9 +1,12 @@
 .catalog-header {
+  width: 320px;
   padding: 0 20px;
-  margin: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .catalog-header__title {
+  display: block;
   font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -11,11 +14,25 @@
   color: #000000;
   margin: 0;
   padding: 0;
+  text-align: start;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-header {
+    width: 768px;
+    padding: 0 30px;
+  }
+
   .catalog-header__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-header {
+    width: 1440px;
+    padding: 0 110px;
   }
 }

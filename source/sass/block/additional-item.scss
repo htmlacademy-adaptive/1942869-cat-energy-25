@@ -7,6 +7,11 @@
   color: #222222;
 }
 
+.additional-item__content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .additional-item__quantity,
 .additional-item__price {
   font-family: "Arial", sans-serif;
@@ -18,4 +23,30 @@
 
 .additional-item__button {
   padding: 10px 109px;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 9px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .additional-item__text {
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: center;
+  }
+
+  .additional-item__button {
+    width: 244px;
+    padding: 11px 98px;
+  }
+
+  .additional-item__quantity,
+  .additional-item__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
