@@ -72,6 +72,7 @@
                   <input class="login-form__content" type="text" id="age" name="age" value="7">
                 </p>
               </section>
+              <hr class="divided-line">
               <section class="login-form__programm-filter">
                 <fieldset class="login-form__group">
                   <legend class="visually-hidden">Выбор программы</legend>
@@ -100,65 +101,86 @@
                   </ul>
                 </fieldset>
               </section>
+              <hr class="divided-line">
             </div>
             <section class="login-form__owner">
               <fieldset class="login-form__owner-information">
-                <legend class="login-form__title">Контактные данные (владельца кота)</legend>
-                <p class="login-form__info">
+                <div class="login-form__title-line">
+                  <div class="login-form__title-wrapper">
+                    <legend class="login-form__title">Контактные данные (владельца кота)</legend>
+                  </div>
+                </div>
+                <article class="login-form__info-wrapper">
+                  <p class="login-form__info">
                   <label class="login-form__label" for="owner-email">E-mail:&#42;</label>
                   <input class="login-form__content" type="text" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
-                </p>
-                <p class="login-form__info">
-                  <label class="login-form__label" for="owner-phone">Телефон:&#42;</label>
-                  <input class="login-form__content" type="text" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
-                </p>
+                  </p>
+                  <p class="login-form__info">
+                    <label class="login-form__label" for="owner-phone">Телефон:&#42;</label>
+                    <input class="login-form__content" type="text" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+                  </p>
+                </article>
               </fieldset>
             </section>
             <section class="login-form__comments">
               <fieldset class="login-form__note">
-                <legend class="login-form__title">Комментарий</legend>
-                <label class="visually-hidden" for="note"></label>
-                <textarea class="login-form__content login-form__content--textarea" id="note" name="note" rows="6">Расскажите обо всех повадках кота</textarea>
+                <div class="login-form__title-line">
+                  <div class="login-form__title-wrapper">
+                    <legend class="login-form__title">Комментарий</legend>
+                  </div>
+                </div>
+                <article class="login-form__info-wrapper">
+                  <label class="visually-hidden" for="note"></label>
+                  <textarea class="login-form__content login-form__content--textarea" id="note" name="note" rows="6">Расскажите обо всех повадках кота</textarea>
+                </article>
               </fieldset>
             </section>
             <section class="login-form__additional-products">
               <fieldset class="login-form__group">
-                <legend class="login-form__title">Дополнительно</legend>
-                <ul class="login-form__list programm-filter">
-                  <li class="programm-filter__item">
-                    <label class="programm-filter__label">
-                      <input class="visually-hidden programm-filter__input" type="checkbox" name="sweetener" checked>
-                      <span class="programm-filter__mark"></span>
-                      <span class="programm-filter__text">Сахарозаменитель</span>
-                    </label>
-                  </li>
-                  <li class="programm-filter__item">
-                    <label class="programm-filter__label">
-                      <input class="visually-hidden programm-filter__input" type="checkbox" name="water">
-                      <span class="programm-filter__mark"></span>
-                      <span class="programm-filter__text">Питьевая вода</span>
-                    </label>
-                  </li>
-                  <li class="programm-filter__item">
-                    <label class="programm-filter__label">
-                      <input class="visually-hidden programm-filter__input" type="checkbox" name="milk">
-                      <span class="programm-filter__mark"></span>
-                      <span class="programm-filter__text">Молоко</span>
-                    </label>
-                  </li>
-                  <li class="programm-filter__item">
-                    <label class="programm-filter__label">
-                      <input class="visually-hidden programm-filter__input" type="checkbox" name="vitamins">
-                      <span class="programm-filter__mark"></span>
-                      <span class="programm-filter__text">Витамины</span>
-                    </label>
-                  </li>
-                </ul>
+                <div class="login-form__title-line">
+                  <div class="login-form__title-wrapper">
+                    <legend class="login-form__title">Дополнительно</legend>
+                  </div>
+                </div>
+                <article class="login-form__info-wrapper">
+                  <ul class="login-form__list programm-filter">
+                    <li class="programm-filter__item">
+                      <label class="programm-filter__label">
+                        <input class="visually-hidden programm-filter__input" type="checkbox" name="sweetener" checked>
+                        <span class="programm-filter__mark"></span>
+                        <span class="programm-filter__text">Сахарозаменитель</span>
+                      </label>
+                    </li>
+                    <li class="programm-filter__item">
+                      <label class="programm-filter__label">
+                        <input class="visually-hidden programm-filter__input" type="checkbox" name="water">
+                        <span class="programm-filter__mark"></span>
+                        <span class="programm-filter__text">Питьевая вода</span>
+                      </label>
+                    </li>
+                    <li class="programm-filter__item">
+                      <label class="programm-filter__label">
+                        <input class="visually-hidden programm-filter__input" type="checkbox" name="milk">
+                        <span class="programm-filter__mark"></span>
+                        <span class="programm-filter__text">Молоко</span>
+                      </label>
+                    </li>
+                    <li class="programm-filter__item">
+                      <label class="programm-filter__label">
+                        <input class="visually-hidden programm-filter__input" type="checkbox" name="vitamins">
+                        <span class="programm-filter__mark"></span>
+                        <span class="programm-filter__text">Витамины</span>
+                      </label>
+                    </li>
+                  </ul>
+                </article>
               </fieldset>
             </section>
             <div class="login-form__send">
-              <button class="login-form__submit button" type="submit">Отправить заявку</button>
-              <small class="login-form__legend login-form__legend--right">* — Обязательные поля</small>
+              <div class="login-form__send-wrapper">
+                <button class="login-form__submit button" type="submit">Отправить заявку</button>
+                <small class="login-form__legend login-form__legend--right">* — Обязательные поля</small>
+              </div>
             </div>
           </form>
         </div>

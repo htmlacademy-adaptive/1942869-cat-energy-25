@@ -9,6 +9,21 @@
   box-sizing: border-box;
   position: relative;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("..//..//img//index-background//index-cat-product.png");
+    background-repeat: no-repeat;
+    background-size: 280px 270px;
+    background-position: center;
+    z-index: 1;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -29,23 +44,6 @@
 
 .preview__header {
   color: #ffffff;
-  height: auto;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("..//..//img//index-background//index-cat-product.png");
-    background-repeat: no-repeat;
-    width: 280px;
-    height: 270px;
-    background-position: center;
-    z-index: 1;
-  }
 }
 
 .preview__title {
@@ -83,6 +81,21 @@
     width: 768px;
     padding: 0 30px;
 
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 200px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("..//..//img//index-background//index-cat-product-tablet.png");
+      background-repeat: no-repeat;
+      background-size: 709px 609px;
+      background-position-y: top;
+      z-index: -1;
+    }
+
     &::after {
       display: none;
     }
@@ -109,20 +122,7 @@
   }
 
   .preview__header {
-    position: relative;
-    z-index: 0;
-    width: 709px;
-    height: 609px;
-
-    &::before {
-      width: 550px;
-      height: 520px;
-      top: 220px;
-      left: 130px;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-    }
+    padding-bottom: 526px;
   }
 
   .preview__user {
@@ -135,22 +135,26 @@
   .preview__wrapper {
     width: 1440px;
     padding: 0 110px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 200px;
+      right: 0;
+      bottom: 0;
+      background-image: url("..//..//img//index-background//index-cat-product-dekstop.png");
+      background-repeat: no-repeat;
+      background-size: 552px 499px;
+      z-index: 0;
+    }
   }
 
   .preview__header {
     position: relative;
-    padding: 0;
+    padding: 0 0 220px 0;
     width: 50%;
-
-    &::before {
-      width: 552px;
-      height: 499px;
-      top: 0;
-      left: 150px;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-    }
 
     .preview-background {
       display: block;
