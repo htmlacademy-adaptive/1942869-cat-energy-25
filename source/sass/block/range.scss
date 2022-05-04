@@ -1,38 +1,31 @@
 .range {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.range__slider {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.range__bar[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-  width: 100%;
-  border-radius: 6px;
-  height: 14px;
-  border: 1px solid #cdcdcd;
+.range__bar {
+  width: 86px;
   background-color: #ffffff;
+  height: 14px;
+  border-radius: 6px;
+  border: #cdcdcd;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 6px;
+    top: 4px;
+    left: 6px;
+  }
 }
 
-.range__bar[type="range"] {::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.range__start,
-.range__end {
+.range__button {
   display: block;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -45,11 +38,56 @@
   color: #000000;
   background-color: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
-  .range__start {
+  .range {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .range__bar {
+    width: 426px;
+    background-color: #cdcdcd;
+    height: 6px;
+    border-radius: 6px;
+    position: relative;
+    margin: 0 23px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .range__toggle {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    left: 50%;
+    top: -15px;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+      border-radius: 50%;
+      left: 13px;
+      top: 14px;
+    }
+  }
+
+  .range__button {
     display: block;
     box-sizing: border-box;
     text-transform: uppercase;
@@ -62,7 +100,9 @@
     color: #000000;
     background-color: transparent;
     border: none;
+    border-bottom: 1px dashed #b2b2b2;
+    outline: none;
     cursor: pointer;
+    padding: 0;
   }
-}
 }

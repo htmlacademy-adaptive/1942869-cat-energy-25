@@ -53,7 +53,6 @@
   margin-bottom: 22px;
 }
 
-
 .login-form__programm-filter {
   width: 320px;
   margin: 0 auto;
@@ -136,6 +135,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .login-form .divided-line {
+    display: none;
+  }
+
+  .login-form__pet-data {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 68px 72px 70px;
+    box-sizing: border-box;
+  }
+
+  .login-form__group {
+    padding: 21px 25px;
+    border: 1px solid #e7e7e7;
+  }
+
   .login-form__label,
   .login-form__content {
     font-family: "OswaldRegular", sans-serif;
@@ -149,21 +164,71 @@
     padding: 11px 19px;
   }
 
+  .login-form__info-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 30px 65px 0 71px;
+    box-sizing: border-box;
+  }
+
+  .login-form__title-line {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      height: 2px;
+      width: 100%;
+      background-color: #68b738;
+      z-index: -1;
+    }
+  }
+
+  .login-form__title-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   .login-form__title {
     display: inline-block;
-    padding: 0 42px 0 0;
+    padding: 0 30px;
     font-family: "OswaldRegular", sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 36px;
+    line-height: 36px;
     color: #000000;
     text-transform: none;
     background-color: #ffffff;
+    margin-left: 41px;
   }
 
-  .login-form__send {
-    display: flex;
-    align-items: center;
+  .login-form__programm-filter {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 68px 0 70px;
+    box-sizing: border-box;
+    margin-bottom: 68px;
+  }
+
+  .login-form__owner-information {
+    border: none;
+    padding: 35px 0 23px 0;
+  }
+
+  .login-form__additional-products .login-form__group {
+    padding: 21px 25px;
+    border: none;
+  }
+
+  .login-form__additional-products .login-form__info-wrapper {
+    display: block;
+  }
+
+  .login-form__additional-products .login-form__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 
   .login-form__submit {
@@ -172,10 +237,30 @@
     font-size: 20px;
     padding: 13px 45px;
   }
+
+  .login-form__send-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 70px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .login-form__pet-data {
+    width: 568px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   .login-form__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(2, 568px);
     grid-template-rows: 200px;
@@ -183,8 +268,14 @@
     margin-bottom: 69px;
   }
 
+  .login-form__info {
+    margin: 0 0 8px 0;
+  }
+
   .login-form__programm-filter {
+    width: 568px;
     padding: 0;
+    box-sizing: border-box;
     margin: 0;
   }
 
@@ -194,46 +285,76 @@
   }
 
   .login-form__group {
-    padding: 21px 25px;
+    padding: 27px 25px;
     border: 1px solid #e7e7e7;
   }
 
   .login-form__owner-information {
+    padding: 0;
+  }
+
+  .login-form__info-wrapper {
+    width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 568px);
     column-gap: 78px;
-    padding: 72px 0 69px 0;
+    box-sizing: border-box;
+    padding: 0 110px;
   }
 
-  .login-form__info {
-    margin: 0;
+  .login-form__content {
+    grid-column: -1/1;
   }
 
-  .login-form__additional-products .login-form__group {
-    border: none;
-    padding: 20px 0 0 0;
+  .login-form__additional-products .login-form__info-wrapper {
+    display: block;
   }
 
-  .login-form__additional-products .programm-filter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 57px 0 61px 0;
-  }
-
-  .login-form__additional-products .programm-filter__item {
+  .login-form__additional-products .login-form__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 78px;
     padding: 0;
-    margin: 0;
-
-    &:nth-child(3) {
-      margin-right: 0;
-    }
   }
 
   .login-form__submit {
-    width: 568px;
+    width: 282px;
+    margin: 20px 42px 0 0;
     font-size: 20px;
-    padding: 13px 188px;
-    margin: 0 81px 0 0;
+    padding: 13px 45px;
+  }
+
+  .login-form__title-line {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      height: 2px;
+      width: 100%;
+      background-color: #68b738;
+      z-index: -1;
+    }
+  }
+
+  .login-form__title-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .login-form__title {
+    padding: 0 40px;
+    margin-left: 70px;
+  }
+
+  .login-form__send-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
   }
 }

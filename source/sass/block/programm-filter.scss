@@ -83,12 +83,13 @@
 @media (min-width: $tablet-width) {
   .programm-filter {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    padding: 25px 27px;
   }
 
   .programm-filter__item {
-    margin: 0 120px 42px 0;
+    margin: 0 120px 18px 0;
 
     &:nth-child(3) {
       margin-right: 212px;
@@ -110,13 +111,20 @@
 
 @media (min-width: $desktop-width) {
   .programm-filter {
-    flex-direction: column;
     margin: 0;
     padding: 0;
+  }
+
+  .programm-filter__text {
+    padding-left: 19px;
   }
 
   .programm-filter__item {
     margin: 0;
     margin-bottom: 13px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
   }
 }
