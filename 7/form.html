@@ -13,8 +13,8 @@
         <section class="main-header__logo-box">
           <a class="main-header__logo" href="index.html">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
               <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
               <img src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy»">
             </picture>
           </a>
@@ -104,11 +104,11 @@
               </section>
               <hr class="divided-line">
             </div>
-            <section class="login-form__owner">
-              <fieldset class="login-form__owner-information">
+            <div class="login-form__owner">
+              <section class="login-form__owner-information">
                 <div class="login-form__title-line">
                   <div class="login-form__title-wrapper">
-                    <legend class="login-form__title">Контактные данные (владельца кота)</legend>
+                    <h3 class="login-form__title">Контактные данные (владельца кота)</h3>
                   </div>
                 </div>
                 <article class="login-form__info-wrapper">
@@ -121,26 +121,26 @@
                     <input class="login-form__content" type="text" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
                   </p>
                 </article>
-              </fieldset>
-            </section>
+              </section>
+            </div>
             <section class="login-form__comments">
-              <fieldset class="login-form__note">
+              <section class="login-form__note">
                 <div class="login-form__title-line">
                   <div class="login-form__title-wrapper">
-                    <legend class="login-form__title">Комментарий</legend>
+                    <h3 class="login-form__title">Комментарий</h3>
                   </div>
                 </div>
                 <article class="login-form__info-wrapper">
                   <label class="visually-hidden" for="note"></label>
                   <textarea class="login-form__content login-form__content--textarea" id="note" name="note" rows="6">Расскажите обо всех повадках кота</textarea>
                 </article>
-              </fieldset>
+              </section>
             </section>
             <section class="login-form__additional-products">
-              <fieldset class="login-form__group">
+              <section class="login-form__group">
                 <div class="login-form__title-line">
                   <div class="login-form__title-wrapper">
-                    <legend class="login-form__title">Дополнительно</legend>
+                    <h3 class="login-form__title">Дополнительно</h3>
                   </div>
                 </div>
                 <article class="login-form__info-wrapper">
@@ -175,7 +175,7 @@
                     </li>
                   </ul>
                 </article>
-              </fieldset>
+              </section>
             </section>
             <div class="login-form__send">
               <div class="login-form__send-wrapper">
