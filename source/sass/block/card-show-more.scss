@@ -1,6 +1,16 @@
 .card-show-more {
   display: flex;
   flex-direction: column;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+    left: -20px;
+    top: 270px;
+  }
 }
 
 .card-show-more__show-more {

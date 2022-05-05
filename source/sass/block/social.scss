@@ -21,4 +21,16 @@
   min-width: 28px;
   min-height: 22px;
   margin: 0;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
+    fill: #c9e1bb;
+  }
+
+  &:active {
+    fill: #c9e1bb;
+  }
 }

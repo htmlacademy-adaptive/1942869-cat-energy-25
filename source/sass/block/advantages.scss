@@ -79,6 +79,7 @@
     grid-template-columns: repeat(2, 230px);
     column-gap: 153px;
     row-gap: 37px;
+    counter-reset: program;
   }
 
   .advantages__item {
@@ -88,6 +89,25 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 37px;
+    position: relative;
+    counter-increment: program;
+
+    &::after {
+      content: "";
+      position: absolute;
+      font-family: "OswaldRegular", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: end;
+      content: counter(program);/*stylelint-disable-line*/
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #f2f2f2;
+      z-index: -1;
+    }
   }
 
   .advantages__description {
@@ -103,38 +123,6 @@
       right: 0;
       bottom: 0;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      font-family: "OswaldRegular", sans-serif;
-      font-weight: 400;
-      font-size: 280px;
-      line-height: 280px;
-      text-align: end;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      color: #f2f2f2;
-      z-index: -1;
-    }
-
-    &--leaf::after {
-      content: "1";
-    }
-
-    &--tube::after {
-      content: "2";
-    }
-
-    &--meal::after {
-      content: "3";
-    }
-
-    &--time::after {
-      content: "4";
-    }
   }
 }
 
@@ -148,5 +136,6 @@
     display: flex;
     flex-direction: row;
     column-gap: 79px;
+    margin-bottom: 49px;
   }
 }

@@ -107,6 +107,24 @@
     min-height: 80vh;
     background-color: #ffffff;
   }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-navigation--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-navigation--nojs .site-list__item--active a {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 @media (min-width: $tablet-width) {

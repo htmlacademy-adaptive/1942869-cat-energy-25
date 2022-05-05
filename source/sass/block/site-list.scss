@@ -1,24 +1,41 @@
 .site-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.site-list__item {
+.site-list__item a {
   font-family: "OswaldMedium", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  display: block;
+  text-align: center;
   text-transform: uppercase;
-  border-bottom: 1px solid #e6e6e6;
+  text-decoration: none;
+  color: #000000;
   padding: 23px 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: -20px;
+    bottom: 0;
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 320px;
+  }
 }
 
-.site-list__link {
-  text-decoration: none;
+.site-list__item:focus a {
+  color: #b3b3b3;
+}
+
+.site-list__item:hover a {
+  color: #b2b2b2;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,7 +49,7 @@
     padding: 0;
   }
 
-  .site-list__item {
+  .site-list__item a {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -41,15 +58,20 @@
     border: none;
     padding: 0;
 
-    &--active::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      background-color: #68b738;
+
+    &::after {
+      display: none;
     }
+  }
+
+  .site-list__item--active a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    background-color: #68b738;
   }
 }
 
@@ -60,16 +82,18 @@
     padding: 0;
     padding-left: 100px;
 
-    &--white .site-list__item {
+    &--white a {
       color: #ffffff;
-    }
-
-    &--dark .site-list__item {
-      color: #000000;
     }
   }
 
-  .site-list__item {
+  .site-list__item a {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .site-list--white .site-list__item {
     font-size: 20px;
     line-height: 30px;
     position: relative;
@@ -80,10 +104,18 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: -10px;
       left: 0;
       height: 2px;
       background-color: #ffffff;
     }
+  }
+
+  .site-list--white .site-list__item:focus a {
+    color: #99c97c;
+  }
+
+  .site-list--white .site-list__item:hover a {
+    color: #c1ddb1;
   }
 }

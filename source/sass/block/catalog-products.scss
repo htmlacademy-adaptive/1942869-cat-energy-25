@@ -6,13 +6,24 @@
 }
 
 .catalog-products__products-info .product-card:nth-child(2n+1) {
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .catalog-products__product-card {
   display: grid;
   grid-template-columns: repeat(2, 141px);
   row-gap: 13px;
+  padding: 19px 0 25px 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+    left: -20px;
+  }
 }
 
 @media (min-width: $tablet-width) {

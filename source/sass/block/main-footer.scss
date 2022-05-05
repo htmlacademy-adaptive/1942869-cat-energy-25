@@ -1,3 +1,7 @@
+.main-footer__contact--dark {
+  background-color: #f2f2f2;
+}
+
 .main-footer__contact-wrapper {
   width: 320px;
   margin: 0 auto;
@@ -120,9 +124,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-footer {
+    position: relative;
+  }
+
   .main-footer__contact-wrapper {
-    width: 1440px;
-    padding: 56px 110px;
+    position: absolute;
+    width: 565px;
+    min-height: 198px;
+    padding: 56px 80px;
+    background-color: #ffffff;
+    margin: 95px 0 0 110px;
+  }
+
+  .main-footer__contact-title {
+    padding: 0;
+  }
+
+  .main-footer__contact-text {
+    padding: 0;
   }
 
   .main-footer__location iframe {

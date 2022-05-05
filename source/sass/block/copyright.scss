@@ -1,0 +1,28 @@
+.copyright__link {
+  color: $darkgrey;
+
+  &:hover,
+  &:active {
+    color: $darkgrey;
+  }
+
+  &:focus {
+    color: rgb(190, 190, 190);
+  }
+}
+
+.copyright__logo-link {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
+    fill: #c9e1bb;
+  }
+
+  &:active {
+    fill: #c9e1bb;
+  }
+}

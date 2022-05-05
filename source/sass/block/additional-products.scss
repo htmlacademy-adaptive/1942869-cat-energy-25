@@ -10,11 +10,34 @@
   box-sizing: border-box;
 }
 
+.additional-products__title-line {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
+.additional-products__title-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .additional-products__title {
+  display: inline-block;
+  padding: 0 20px;
   font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-transform: none;
+  background-color: #ffffff;
   color: #000000;
 }
 

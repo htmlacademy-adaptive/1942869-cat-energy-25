@@ -30,7 +30,19 @@
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
+}
+
+.case__item {
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  border: 1px solid #cdcdcd;
+  position: relative;
+  text-align: center;
+  padding: 16px 0;
+  z-index: 1;
+  margin: 0 32px 10px 0;
 }
 
 .case__number {
@@ -39,55 +51,67 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  padding: 5px 15px;
-  border: 1px solid #cdcdcd;
-  margin-right: 30px;
 }
 
 .case__text {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  bottom: -20px;
+  left: 12px;
+  z-index: 5;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   color: #c4c4c4;
+  background-color: #eaeaea;
 }
 
 .case__cost {
+  display: flex;
+  justify-content: center;
   font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.case__cost-price {
+  margin: 0;
+}
+
+.case__range-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 40px 0;
 }
 
 .case__cats-image {
-  position: relative;
+  margin-top: 40px;
+  background-image: url("..//..//img//index-background//cat-fat-mobile.png");
+  background-repeat: no-repeat;
   width: 280px;
   height: 232px;
 }
 
-.case__cat-fat::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("..//..//img//index-background//index-cat-fat.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 280px 232px;
-}
-
 @media (min-width: $tablet-width) {
   .case {
-    background-image: linear-gradient(to bottom, #ffffff 70%, #eaeaea 30%);
+    background-image: linear-gradient(to bottom, #ffffff 60%, #eaeaea 40%);
   }
 
   .case__wrapper {
     width: 768px;
+    margin: 0 auto;
     padding: 0 30px;
+    box-sizing: border-box;
   }
 
   .case__title {
@@ -101,13 +125,14 @@
   .case__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 51px 0 0 0;
+    padding: 63px 0 51px 0;
+    margin: 0;
   }
 
   .case__results {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
   }
 
   .case__result {
@@ -115,70 +140,171 @@
     padding: 0;
   }
 
+  .case__item {
+    width: 162px;
+    border: 1px solid #cdcdcd;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    z-index: 1;
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 161px;
+    }
+  }
+
   .case__number {
+    display: block;
     font-size: 30px;
     line-height: 37px;
     text-transform: uppercase;
-    margin-right: 42px;
-    padding: 15px 20px;
+    text-align: center;
   }
 
   .case__text {
+    width: 140px;
+    height: 29px;
+    bottom: -36px;
+    left: 12px;
     font-size: 14px;
     line-height: 14px;
+    color: #000000;
+    background-color: #ffffff;
   }
 
   .case__cost {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     font-size: 20px;
     line-height: 20px;
-    padding: 0 0 0;
+    margin: 0;
+    padding: 0;
   }
 
   .case__cats-image {
-    padding: 0 80px;
-    margin: 0;
+    height: 511px;
+    width: 592px;
+    position: relative;
+    display: block;
+    padding: 80px 58px 30px;
+    background-image: none;
   }
 
-  .case__range {
-    padding: 0 80px;
-    margin: 0;
+  .case__cats-image::before {
+    content: "";
+    position: absolute;
+    background-image: url("..//..//img//index-background//cat-fat.png");
+    background-repeat: no-repeat;
+    width: 310px;
+    height: 511px;
+  }
+
+  .case__cats-image::after {
+    content: "";
+    position: absolute;
+    background-image: url("..//..//img//index-background//cat-skinny.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 511px;
+    background-size: cover;
+    background-position: -240px 10px;
+    left: 369px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .case {
-    background-image: linear-gradient(to bottom, #ffffff 20%, #eaeaea 20%);
+    background-image: linear-gradient(to bottom, #ffffff 30%, #f2f2f2 30%);
   }
 
   .case__wrapper {
     width: 1440px;
+    margin: 0 auto;
     padding: 0 110px;
+  }
+
+  .case__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+
+  .case__description {
+    position: absolute;
+    font-size: 16px;
+    line-height: 24px;
+    width: 480px;
+    padding: 0;
+    margin: 220px 0 0 0;
   }
 
   .case__information {
     display: flex;
-    justify-content: space-between;
   }
 
   .case__results {
     display: flex;
     flex-direction: column;
-  }
-
-  .case__result {
-    margin: 69px 0 0 0;
+    align-items: start;
+    margin: 311px 0 0 0;
     padding: 0;
   }
 
-  .case__title {
-    font-size: 36px;
-    line-height: 40px;
+  .case__text {
+    width: 140px;
+    height: 29px;
+    bottom: -36px;
+    left: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    background-color: #f2f2f2;
   }
 
-  .case__description {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 784px 0 0;
-    margin: 70px 0 0 0;
+  .case__range-show {
+    padding: 0;
+    margin-bottom: 65px;
+  }
+
+  .case__cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 55px 0 0 0;
+    padding: 0;
+  }
+
+  .case__cost-price {
+    margin-left: 63px;
+  }
+
+  .case__cats-image {
+    height: 511px;
+    width: 592px;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+  }
+
+  .case__cats-image::after {
+    content: "";
+    position: absolute;
+    background-image: url("..//..//img//index-background//cat-skinny.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 511px;
+    background-size: cover;
+    background-position: -240px 10px;
+    left: 310px;
   }
 }
