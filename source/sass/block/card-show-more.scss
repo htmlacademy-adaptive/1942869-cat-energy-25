@@ -60,17 +60,31 @@
 @media (min-width: $tablet-width) {
   .card-show-more {
     align-items: center;
-    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .card-show-more__show-more {
+    background-image: url("..//..//img//catalog-card//plus-tablet.svg");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    margin: 0 132px 50px;
+    cursor: pointer;
   }
 
   .card-show-more__show-all {
-    margin-top: 33px;
+    margin: 0;
   }
 
   .card-show-more__title {
     font-size: 20px;
     line-height: 22px;
-    padding: 0;
+    padding: 0 80px;
     text-align: center;
   }
 
@@ -79,5 +93,6 @@
     line-height: 18px;
     text-align: center;
     padding: 0 50px;
+    margin: 0;
   }
 }

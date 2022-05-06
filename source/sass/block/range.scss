@@ -12,16 +12,27 @@
   border-radius: 6px;
   border: #cdcdcd;
   position: relative;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 36px;
-    height: 6px;
+.range__toggle {
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  border: none;
+  cursor: pointer;
+
+  &--before {
+  background-color: #68b738;
+  border-radius: 6px;
+  top: 4px;
+  left: 6px;
+  }
+
+  &--after {
     background-color: #68b738;
     border-radius: 6px;
     top: 4px;
-    left: 6px;
+    left: 44px;
   }
 }
 
