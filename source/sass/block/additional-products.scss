@@ -51,20 +51,7 @@
 @media (min-width: $tablet-width) {
   .additional-products__list {
     padding: 28px 38px;
-    border: 1px solid #cdcdcd;
     box-sizing: border-box;
-    position: relative;
-
-    &::after {
-      content: "";
-      top: 0;
-      left: 0;
-      position: absolute;
-      height: 1px;
-      width: 707px;
-      background-color: #cdcdcd;
-      box-shadow: 0 0 10px 0 #cdcdcd;
-    }
   }
 
   .additional-products .divided-line {
@@ -116,7 +103,6 @@
 
   .additional-products__list {
     padding: 0;
-    border: none;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
   }
