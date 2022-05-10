@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .product-description {
+    font-size: 16px;
+    line-height: 16px;
+
+    & tr td {
+      padding: 5px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .product-description td:nth-child(2n) {
+    text-align: end;
+  }
+}

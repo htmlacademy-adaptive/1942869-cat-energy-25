@@ -108,6 +108,18 @@
     background-color: #ffffff;
   }
 
+  .main-navigation--opened .main-navigation__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 1px;
+    width: 320px;
+    background-color: #e6e6e6;
+    box-shadow: 0 66px 0 0 #e6e6e6, 0 132px 0 0 #e6e6e6, 0 198px 0 0 #e6e6e6;
+  }
+
   .main-navigation--nojs .main-navigation__toggle {
     display: none;
   }
