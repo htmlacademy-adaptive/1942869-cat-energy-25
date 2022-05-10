@@ -98,8 +98,18 @@
   margin-top: 40px;
   background-image: url("..//..//img//index-background//cat-fat-mobile.png");
   background-repeat: no-repeat;
+  background-position: center;
   width: 280px;
   height: 232px;
+  background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .case__cats-image {
+    background-image: url("..//..//img//index-background//cat-fat-mobile@2x.png");
+    width: 280px;
+    height: 232px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -191,27 +201,50 @@
     display: block;
     padding: 80px 58px 30px;
     background-image: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("..//..//img//index-background//cat-fat.png");
+      background-repeat: no-repeat;
+      width: 310px;
+      height: 511px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("..//..//img//index-background//cat-skinny.png");
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 511px;
+      background-size: cover;
+      background-position: -240px 10px;
+      left: 369px;
+    }
   }
 
-  .case__cats-image::before {
-    content: "";
-    position: absolute;
-    background-image: url("..//..//img//index-background//cat-fat.png");
-    background-repeat: no-repeat;
-    width: 310px;
-    height: 511px;
-  }
+  @media (min-resolution: 2dppx) {
+    .case__cats-image {
 
-  .case__cats-image::after {
-    content: "";
-    position: absolute;
-    background-image: url("..//..//img//index-background//cat-skinny.png");
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 511px;
-    background-size: cover;
-    background-position: -240px 10px;
-    left: 369px;
+      &::before {
+        background-image: url("..//..//img//index-background//cat-fat@2x.png");
+        width: 310px;
+        height: 511px;
+        background-position: 0% 50%;
+        background-size: cover;
+      }
+
+      &::after {
+        background-image: url("..//..//img//index-background//cat-skinny@2x.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 511px;
+        background-size: cover;
+        background-position: -240px 10px;
+        left: 369px;
+      }
+    }
   }
 }
 

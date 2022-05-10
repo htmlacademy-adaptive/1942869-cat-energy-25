@@ -22,8 +22,18 @@
     background-repeat: no-repeat;
     background-size: 280px 290px;
     background-position: center;
+    object-fit: cover;
     opacity: 0.2;
     z-index: -1;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .bonus__wrapper {
+    &::after {
+      background-image: url("..//..//img//bonus-background-cat@2x.jpg");
+      background-size: 280px 290px;
+    }
   }
 }
 
@@ -78,8 +88,18 @@
       background-repeat: no-repeat;
       background-size: 707px 200px;
       background-position: center;
+      object-fit: cover;
       opacity: 0.2;
       z-index: -1;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .bonus__wrapper {
+      &::after {
+        background-image: url("..//..//img//bonus-background-cat-tablet@2x.jpg");
+        background-size: 707px 200px;
+      }
     }
   }
 
@@ -126,8 +146,18 @@
       background-repeat: no-repeat;
       background-size: 245px 290px;
       background-position: center;
+      object-fit: cover;
       opacity: 0.2;
       z-index: -1;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .bonus__wrapper {
+      &::after {
+        background-image: url("..//..//img//bonus-background-cat@2x.jpg");
+        background-size: 245px 290px;
+      }
     }
   }
 

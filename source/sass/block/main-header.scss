@@ -53,7 +53,7 @@
     padding: 53px 110px;
 
     &--background {
-      width: 1440px;
+      min-width: 1440px;
       justify-content: space-between;
       padding: 53px 110px;
       position: relative;
@@ -63,13 +63,24 @@
         position: absolute;
         background-image: url("..//..//img//index-background//index-background-cat-desktop.jpg");
         background-repeat: no-repeat;
+        background-size: cover;
         width: 720px;
         height: 696px;
         top: 0;
-        left: 720px;
+        left: 50%;
         right: 0;
         bottom: 0;
         opacity: 0.2;
+      }
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main-header__wrapper {
+      &::after {
+        background-image: url("..//..//img//index-background//index-background-cat-desktop@2x.jpg");
+        width: 720px;
+        height: 696px;
       }
     }
   }

@@ -34,11 +34,27 @@
     bottom: 0;
     background-image: url("..//..//img//index-background//index-background-cat.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     width: 320px;
     height: 302px;
     opacity: 0.6;
     z-index: -1;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .preview__wrapper {
+    &::before {
+      background-image: url("..//..//img//index-background//index-cat-product@2x.png");
+      background-repeat: no-repeat;
+      background-size: 280px 270px;
+    }
+
+    &::after {
+      background-image: url("..//..//img//index-background//index-background-cat@2x.jpg");
+      width: 320px;
+      height: 302px;
+    }
   }
 }
 
@@ -101,6 +117,15 @@
     }
   }
 
+  @media (min-resolution: 2dppx) {
+    .preview__wrapper {
+      &::before {
+        background-image: url("..//..//img//index-background//index-cat-product-tablet@2x.png");
+        background-size: 709px 609px;
+      }
+    }
+  }
+
   .preview-background {
     margin: 0;
     padding: 0;
@@ -148,6 +173,15 @@
       background-repeat: no-repeat;
       background-size: 552px 499px;
       z-index: 0;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .preview__wrapper {
+      &::before {
+        background-image: url("..//..//img//index-background//index-cat-product-dekstop@2x.png");
+        background-size: 552px 499px;
+      }
     }
   }
 
