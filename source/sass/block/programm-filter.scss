@@ -46,10 +46,6 @@
   border-radius: 50%;
 }
 
-.programm-filter__input[type="radio"]:hover + .programm-filter__mark::before {
-  background-color: #d2eac4;
-}
-
 .programm-filter__mark:hover {
   border: 2px solid #bababa;
 }
