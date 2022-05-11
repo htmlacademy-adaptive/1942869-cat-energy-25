@@ -21,6 +21,7 @@
   margin: 0 auto;
   padding: 41px 20px 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 .login-form__label,
@@ -30,6 +31,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $darkgrey;
+  position: relative;
 }
 
 .login-form__content {
@@ -40,7 +42,6 @@
   border: 1px solid #e7e7e7;
   outline: none;
   text-transform: uppercase;
-  position: relative;
 
   &--textarea {
     width: 100%;
@@ -48,19 +49,36 @@
   }
 }
 
-.login-form__icon {
-  position: absolute;
-  right: 30px;
-  stroke: #222222;
-
+.login-form__content--input {
   &:hover {
-    fill: #222222;
+    border: 1px solid $darkgrey;
   }
 
   &:focus {
-    fill: #68b738;
-    stroke: #68b738;
+    border: 1px solid #cdcdcd;
   }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+}
+
+.login-form__content--owner {
+  &:hover {
+    border: 1px solid $darkgrey;
+  }
+
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+}
+
+.login-form__content--owner::placeholder {
+  color: $darkgrey;
+}
+
+.login-form__content--owner:invalid:not(:placeholder-shown):invalid {
+  border: 1px solid #ff8282;
 }
 
 .login-form__note {
@@ -151,6 +169,21 @@
   color: #000000;
 }
 
+.login-form__icon {
+  position: absolute;
+  left: 670px;
+  stroke: #222222;
+
+  &:hover {
+    fill: #222222;
+  }
+
+  &:focus {
+    fill: #68b738;
+    stroke: #68b738;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .login-form .divided-line {
     display: none;
@@ -183,7 +216,7 @@
 
   .login-form__icon {
     position: absolute;
-    right: 105px;
+    left: 670px;
     stroke: #222222;
 
     &:hover {
@@ -319,17 +352,16 @@
 
   .login-form__icon {
     position: absolute;
-    right: 0;
     stroke: #222222;
 
     &--letter {
-      left: 634px;
-      bottom: 474px;
+      left: 640px;
+      bottom: 40px;
     }
 
     &--phone {
-      right: 130px;
-      bottom: 472px;
+      left: 1280px;
+      bottom: 40px;
     }
 
     &:hover {

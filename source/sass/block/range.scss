@@ -96,6 +96,14 @@
       left: 13px;
       top: 14px;
     }
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:focus {
+      border: 1px solid #68b738;
+    }
   }
 
   .range__button {
@@ -111,9 +119,17 @@
     color: #000000;
     background-color: transparent;
     border: none;
-    border-bottom: 1px dashed #b2b2b2;
+    border-bottom: 1px dashed #8c8c8c;
     outline: none;
     cursor: pointer;
     padding: 0;
+
+    &:hover {
+      border-bottom: 1px solid #b2b2b2;
+    }
+
+    &:focus {
+      border-bottom: none;
+    }
   }
 }
