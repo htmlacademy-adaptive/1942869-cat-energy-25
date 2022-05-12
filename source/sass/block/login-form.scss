@@ -157,8 +157,10 @@
   fill: #222222;
 }
 
-.login-form__icon:focus {
-  fill: #68b738;
+.login-form__content--owner {
+  &:hover {
+    border: 1px solid $darkgrey;
+  }
 }
 
 .login-form__content--owner:focus + .login-form__icon {
@@ -166,22 +168,17 @@
   fill: #68b738;
 }
 
-.login-form__content--owner:focus:invalid + .login-form__icon {
-  fill: #ff8282;
-}
-
-.login-form__content--owner {
-  &:hover {
-    border: 1px solid $darkgrey;
-  }
-}
-
 .login-form__content--owner::placeholder {
   color: $darkgrey;
+  width: 100%;
 }
 
-.login-form__content--owner:invalid:not(:placeholder-shown):invalid {
+.login-form__content--owner:invalid:not(:placeholder-shown) {
   border: 1px solid #ff8282;
+}
+
+.login-form__content--owner:invalid + .login-form__icon {
+  fill: #ff8282;
 }
 
 @media (min-width: $tablet-width) {
