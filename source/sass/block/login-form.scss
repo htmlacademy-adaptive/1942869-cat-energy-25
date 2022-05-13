@@ -154,31 +154,48 @@
 .login-form__icon {
   position: absolute;
   left: 270px;
-  fill: #222222;
-}
 
-.login-form__content--owner {
-  &:hover {
-    border: 1px solid $darkgrey;
+  &--letter {
+    stroke: #222222;
+    fill: none;
   }
 }
 
-.login-form__content--owner:focus + .login-form__icon {
-  border: 1px solid #cdcdcd;
+.login-form__input {
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
+
+  &:focus {
+    border: 1px solid $darkgrey;
+    outline: 1px solid $darkgrey;
+  }
+
+  &::placeholder {
+    color: $darkgrey;
+    opacity: 1;
+  }
+}
+
+.login-form__content--owner:focus + .login-form__icon--phone {
   fill: #68b738;
 }
 
-.login-form__content--owner::placeholder {
-  color: $darkgrey;
-  width: 100%;
+.login-form__content--owner:focus + .login-form__icon--letter {
+  stroke: #68b738;
 }
 
-.login-form__content--owner:invalid:not(:placeholder-shown) {
-  border: 1px solid #ff8282;
-}
-
-.login-form__content--owner:invalid + .login-form__icon {
+.login-form__content--owner:focus:invalid + .login-form__icon--phone {
   fill: #ff8282;
+}
+
+.login-form__content--owner:focus:invalid + .login-form__icon--letter {
+  stroke: #ff8282;
 }
 
 @media (min-width: $tablet-width) {
