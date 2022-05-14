@@ -63,24 +63,6 @@
   }
 }
 
-.login-form__content--owner {
-  &:hover {
-    border: 1px solid $darkgrey;
-  }
-
-  &:focus {
-    border: 1px solid #cdcdcd;
-  }
-}
-
-.login-form__content--owner::placeholder {
-  color: $darkgrey;
-}
-
-.login-form__content--owner:invalid:not(:placeholder-shown):invalid {
-  border: 1px solid #ff8282;
-}
-
 .login-form__note {
   border: none;
   padding: 0;
@@ -171,17 +153,49 @@
 
 .login-form__icon {
   position: absolute;
-  left: 670px;
-  stroke: #222222;
+  left: 270px;
 
+  &--letter {
+    stroke: #222222;
+    fill: none;
+  }
+}
+
+.login-form__input {
   &:hover {
-    fill: #222222;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
   }
 
   &:focus {
-    fill: #68b738;
-    stroke: #68b738;
+    border: 1px solid $darkgrey;
+    outline: 1px solid $darkgrey;
   }
+
+  &::placeholder {
+    color: $darkgrey;
+    opacity: 1;
+  }
+}
+
+.login-form__content--owner:focus + .login-form__icon--phone {
+  fill: #68b738;
+}
+
+.login-form__content--owner:focus + .login-form__icon--letter {
+  stroke: #68b738;
+}
+
+.login-form__content--owner:focus:invalid + .login-form__icon--phone {
+  fill: #ff8282;
+}
+
+.login-form__content--owner:focus:invalid + .login-form__icon--letter {
+  stroke: #ff8282;
 }
 
 @media (min-width: $tablet-width) {
@@ -217,16 +231,6 @@
   .login-form__icon {
     position: absolute;
     left: 670px;
-    stroke: #222222;
-
-    &:hover {
-      fill: #222222;
-    }
-
-    &:focus {
-      fill: #68b738;
-      stroke: #68b738;
-    }
   }
 
   .login-form__info-wrapper {
@@ -352,7 +356,6 @@
 
   .login-form__icon {
     position: absolute;
-    stroke: #222222;
 
     &--letter {
       left: 640px;
@@ -362,15 +365,6 @@
     &--phone {
       left: 1280px;
       bottom: 40px;
-    }
-
-    &:hover {
-      fill: #222222;
-    }
-
-    &:focus {
-      fill: #68b738;
-      stroke: #68b738;
     }
   }
 
