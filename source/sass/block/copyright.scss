@@ -1,28 +1,33 @@
 .copyright__link {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   color: $darkgrey;
+  fill: #666666;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  &:hover,
-  &:active {
+  &:hover {
     color: $darkgrey;
+    fill: #666666;
   }
 
   &:focus {
-    color: rgb(190, 190, 190);
-  }
-}
-
-.copyright__logo-link {
-  fill: #666666;
-
-  &:hover {
+    color: #68b738;
     fill: #68b738;
   }
 
-  &:focus {
+  &:disabled {
+    color: #c9e1bb;
     fill: #c9e1bb;
   }
+}
 
-  &:active {
-    fill: #c9e1bb;
+@media (min-width: $tablet-width) {
+  .copyright__img {
+    padding: 0 0 0 22px;
   }
 }

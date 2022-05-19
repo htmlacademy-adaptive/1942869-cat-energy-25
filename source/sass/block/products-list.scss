@@ -14,8 +14,8 @@
 .products-list__item {
   box-sizing: border-box;
   background-color: #f2f2f2;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 10px 20px 0 20px;
+  margin: 0 0 20px 0;
 }
 
 .products-list__title {
@@ -36,8 +36,8 @@
     background-color: #68b738;
     right: 0;
     bottom: 0;
-    left: 10px;
-    top: 11px;
+    left: 4px;
+    top: 14px;
   }
 
   &--slim::after {
@@ -49,7 +49,7 @@
     height: 50px;
     right: 0;
     bottom: 0;
-    left: 15px;
+    left: 10px;
     top: 10px;
   }
 
@@ -62,8 +62,8 @@
     height: 28px;
     right: 0;
     bottom: 0;
-    left: 0;
-    top: 20px;
+    left: -6px;
+    top: 22px;
   }
 }
 
@@ -73,10 +73,12 @@
   font-size: 14px;
   line-height: 18px;
   color: $darkgrey;
+  margin: 0;
+  padding: 10px 0 10px 0;
 }
 
 .products-list__catalog {
-  padding: 15px 0 18px 0;
+  padding: 6px 0 22px 0;
 }
 
 .products-list__link {

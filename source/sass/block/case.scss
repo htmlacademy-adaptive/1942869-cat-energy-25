@@ -15,7 +15,8 @@
   color: #000000;
   font-size: 36px;
   line-height: 40px;
-  padding-left: 20px;
+  padding: 22px 0 28px 0;
+  margin: 0;
 }
 
 .case__description {
@@ -24,13 +25,14 @@
   font-size: 14px;
   line-height: 18px;
   color: $darkgrey;
+  margin: 14px 0 20px 0;
 }
 
 .case__result {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 
 .case__item {
@@ -40,9 +42,13 @@
   border: 1px solid #cdcdcd;
   position: relative;
   text-align: center;
-  padding: 16px 0;
+  padding: 14px 0  18px 0;
   z-index: 1;
-  margin: 0 32px 10px 0;
+  margin: 0 28px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .case__number {
@@ -58,7 +64,7 @@
   width: 80px;
   height: 20px;
   bottom: -20px;
-  left: 12px;
+  left: 20px;
   z-index: 5;
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -79,7 +85,7 @@
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin: 0;
+  margin: 32px 0 0 0;
   padding: 0;
 }
 
@@ -91,7 +97,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0 40px 0;
+  padding: 0 0 43px 0;
 }
 
 .case__cats-image {

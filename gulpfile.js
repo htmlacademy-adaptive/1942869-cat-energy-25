@@ -70,19 +70,21 @@ const createWebp = () => {
 //Svg
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/sprite.svg', '!source/img/icon-form.svg','!source/img/social.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/sprite.svg', '!source/img/icon-form.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
 const sprite = () => {
-  return gulp.src('source/img/icon-form/social/*.svg')
+  return gulp.src('source/img/icon-form/*.svg')
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
+
+
 
 //Copy
 
@@ -109,7 +111,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
