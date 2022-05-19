@@ -23,14 +23,14 @@
   margin: 0;
 
   &:hover {
-    fill: #68b738;
+    fill: #666666;
   }
 
   &:focus {
-    fill: #c9e1bb;
+    fill: #68b738;
   }
 
-  &:active {
+  &:disabled {
     fill: #c9e1bb;
   }
 }
