@@ -50,11 +50,6 @@
 
 
 @media (min-width: $tablet-width) {
-  .additional-products__list {
-    padding: 28px 38px;
-    box-sizing: border-box;
-  }
-
   .additional-products .divided-line {
     display: none;
   }
@@ -78,6 +73,7 @@
   .additional-products__list {
     margin: 52px 0 66px;
     padding: 0;
+    box-sizing: border-box;
   }
 }
 

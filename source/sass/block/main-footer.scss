@@ -7,7 +7,7 @@
   width: 320px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2,139px);
+  grid-template-columns: repeat(2, 139px);
   padding: 0 20px;
 }
 
@@ -97,7 +97,7 @@
     box-sizing: border-box;
     padding: 56px 70px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .main-footer__contact-title {

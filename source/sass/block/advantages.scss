@@ -110,7 +110,7 @@
     }
 
     &--leaf::after {
-     right: 26px;
+      right: 26px;
     }
   }
 
@@ -162,7 +162,7 @@
   }
 
   .advantages__items {
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 79px;
     margin: 0;
   }

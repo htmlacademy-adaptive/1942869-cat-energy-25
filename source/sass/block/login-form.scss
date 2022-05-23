@@ -83,7 +83,6 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  margin: 0;
 }
 
 .login-form__group {
@@ -470,13 +469,6 @@
     margin: 60px 110px 40px;
   }
 
-  .login-form__submit {
-    width: 282px;
-    margin: 20px 42px 0 0;
-    font-size: 20px;
-    padding: 13px 45px;
-  }
-
   .login-form__title-line {
     position: relative;
 
@@ -512,6 +504,7 @@
 
   .login-form__submit {
     width: 565px;
+    font-size: 20px;
     margin: 0;
     padding: 20px 30px;
   }
