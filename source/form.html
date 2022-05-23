@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы питания для котов «Cat Energy»</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -105,7 +108,7 @@
             </div>
             <div class="login-form__owner">
               <section class="login-form__owner-information">
-                <div class="login-form__title-line">
+                <div class="login-form__title-line login-form__title-line--top">
                   <div class="login-form__title-wrapper">
                     <h3 class="login-form__title">Контактные данные (владельца кота)</h3>
                   </div>
@@ -137,7 +140,7 @@
                 </div>
                 <article class="login-form__info-wrapper">
                   <label class="visually-hidden" for="note"></label>
-                  <textarea class="login-form__content login-form__content--textarea" id="note" name="note" rows="6">Расскажите обо всех повадках кота</textarea>
+                  <textarea class="login-form__content login-form__content--textarea" id="note" name="note" rows="5">Расскажите обо всех повадках&#160;кота</textarea>
                 </article>
               </section>
             </section>
@@ -148,30 +151,30 @@
                     <h3 class="login-form__title">Дополнительно</h3>
                   </div>
                 </div>
-                <article class="login-form__info-wrapper">
+                <article class="login-form__info-wrapper login-form__info-wrapper--checkbox">
                   <ul class="login-form__list programm-filter">
-                    <li class="programm-filter__item">
+                    <li class="programm-filter__item programm-filter__item--checkbox">
                       <label class="programm-filter__label">
                         <input class="visually-hidden programm-filter__input" type="checkbox" name="sweetener" checked>
                         <span class="programm-filter__mark"></span>
                         <span class="programm-filter__text">Сахарозаменитель</span>
                       </label>
                     </li>
-                    <li class="programm-filter__item">
+                    <li class="programm-filter__item programm-filter__item--checkbox">
                       <label class="programm-filter__label">
                         <input class="visually-hidden programm-filter__input" type="checkbox" name="water">
                         <span class="programm-filter__mark"></span>
                         <span class="programm-filter__text">Питьевая вода</span>
                       </label>
                     </li>
-                    <li class="programm-filter__item">
+                    <li class="programm-filter__item programm-filter__item--checkbox">
                       <label class="programm-filter__label">
                         <input class="visually-hidden programm-filter__input" type="checkbox" name="milk">
                         <span class="programm-filter__mark"></span>
                         <span class="programm-filter__text">Молоко</span>
                       </label>
                     </li>
-                    <li class="programm-filter__item">
+                    <li class="programm-filter__item programm-filter__item--checkbox">
                       <label class="programm-filter__label">
                         <input class="visually-hidden programm-filter__input" type="checkbox" name="vitamins">
                         <span class="programm-filter__mark"></span>
@@ -195,7 +198,7 @@
     <footer class="main-footer main-footer-inner-form">
       <div class="main-footer__contact main-footer__contact--dark">
         <div class="main-footer__contact-wrapper">
-          <p class="main-footer__contact-title">Приглашаем<br>к сотрудничеству дилеров!</p>
+          <p class="main-footer__contact-title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
           <div class="main-footer__cantact-common">
             <p class="main-footer__contact-text">ул. Большая Конюшенная,&#160;д.&#160;19/8</p>
             <p class="mein-footer__contact-adress">Санкт-Петербург</p>

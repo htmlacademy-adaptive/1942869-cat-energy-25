@@ -5,27 +5,31 @@
 .login-form__pet-data {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px 1px;
+  padding: 0 20px 10px;
   box-sizing: border-box;
 }
 
 .login-form .divided-line {
-  
+  margin: 0;
 }
 
 .login-form__info {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 14px 0;
+  margin: 0 0 12px 0;
 }
 
 .login-form__info-wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 41px 20px 0;
+  padding: 34px 0 0 20px;
   box-sizing: border-box;
   position: relative;
+
+  &--checkbox {
+    padding: 32px 20px 0 20px;
+  }
 }
 
 .login-form__label,
@@ -42,14 +46,15 @@
   padding: 13px 15px;
   box-sizing: border-box;
   flex-grow: 1;
-  margin-left: 12px;
+  margin-left: 13px;
   border: 1px solid #e7e7e7;
   outline: none;
   text-transform: uppercase;
 
   &--textarea {
     width: 100%;
-    margin: 0;
+    margin: 6px 0 0 0;
+    padding: 10px 12px 50px 15px;
   }
 }
 
@@ -69,22 +74,22 @@
 
 .login-form__note {
   border: none;
-  padding: 0;
+  padding: 0 0 3px 0;
   margin: 0;
-  margin-bottom: 22px;
 }
 
 .login-form__programm-filter {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px 10px;
+  padding: 0 20px;
   box-sizing: border-box;
-  margin-bottom: 26px;
+  margin: 0;
 }
 
 .login-form__group {
   border: none;
-  padding: 20px 0 0 0;
+  padding: 20px 0 12px 0;
+  margin: 0;
 }
 
 .login-form__list {
@@ -96,7 +101,7 @@
 
 .login-form__owner-information {
   border: none;
-  padding: 35px 0 23px 0;
+  padding: 28px 0 10px 0;
 }
 
 .login-form__title-line {
@@ -111,6 +116,10 @@
     background-color: #68b738;
     z-index: -1;
   }
+
+  &--top::before {
+    top: 25%;
+  }
 }
 
 .login-form__title-wrapper {
@@ -120,7 +129,8 @@
 
 .login-form__title {
   display: inline-block;
-  padding: 0 14px;
+  padding: 0 20px 0 18px;
+  margin: 0 100px 0 0;
   font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -130,18 +140,22 @@
 }
 
 .login-form__send {
-  margin-bottom: 32px;
+  margin: 0;
 }
 
 .login-form__send-wrapper {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 32px;
 }
 
 .login-form__submit {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   width: 280px;
-  padding: 7px 44px;
-  margin: 34px auto 21px;
+  padding: 10px 44px;
+  margin: 18px auto 21px;
 }
 
 .login-form__legend {
@@ -210,12 +224,16 @@
   .login-form__pet-data {
     width: 768px;
     margin: 0 auto;
-    padding: 0 68px 72px 70px;
+    padding: 68px 68px 60px 70px;
     box-sizing: border-box;
   }
 
+  .login-form__info {
+    margin: 0 0 16px 0;
+  }
+
   .login-form__group {
-    padding: 21px 25px;
+    padding: 10px 28px 20px;
     border: 1px solid #e7e7e7;
   }
 
@@ -228,20 +246,44 @@
     color: $darkgrey;
   }
 
+  .login-form__note {
+    padding: 24px 0 46px 0;
+  }
+
   .login-form__content {
     padding: 11px 19px;
+    margin: 0 0 0 17px;
+    border: 1px solid #e7e7e7;
+    outline: none;
+    text-transform: uppercase;
+
+    &--textarea {
+      width: 100%;
+      margin: 0;
+      padding: 6px 0 10px 20px;
+    }
+  }
+
+  .login-form__content--owner {
+    padding: 8px 20px 12px;
+    margin: 0 0 0 17px;
   }
 
   .login-form__icon {
     position: absolute;
-    left: 670px;
+    left: 666px;
   }
 
   .login-form__info-wrapper {
     width: 768px;
     margin: 0 auto;
-    padding: 30px 65px 0 71px;
+    padding: 76px 65px 0 70px;
     box-sizing: border-box;
+
+    &--checkbox {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   .login-form__title-line {
@@ -279,18 +321,17 @@
   .login-form__programm-filter {
     width: 768px;
     margin: 0 auto;
-    padding: 0 68px 0 70px;
+    padding: 0 68px 40px 70px;
     box-sizing: border-box;
-    margin-bottom: 68px;
   }
 
   .login-form__owner-information {
     border: none;
-    padding: 35px 0 23px 0;
+    padding: 35px 0 25px 0;
   }
 
   .login-form__additional-products .login-form__group {
-    padding: 21px 25px;
+    padding: 20px 0 0 0;
     border: none;
   }
 
@@ -299,25 +340,37 @@
   }
 
   .login-form__additional-products .login-form__list {
+    max-width: 565px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 282px 221px;
+    column-gap: 62px;
+    row-gap: 14px;
     padding: 0;
+    margin: 46px 133px 0 70px;
   }
 
   .login-form__submit {
     width: 282px;
-    margin: 20px 42px 0 0;
+    margin: 20px 60px 0 0;
     font-size: 20px;
-    padding: 13px 45px;
+    padding: 15px 45px;
   }
 
   .login-form__send-wrapper {
     width: 768px;
     margin: 0 auto;
-    padding: 0 70px;
+    padding: 26px 70px 72px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+  }
+
+  .login-form__legend {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px 0 0 0;
   }
 }
 
@@ -367,13 +420,17 @@
     }
 
     &--phone {
-      left: 1280px;
+      left: 1294px;
       bottom: 40px;
     }
   }
 
+  .login-form__note {
+    padding: 24px 0 12px 0;
+  }
+
   .login-form__group {
-    padding: 27px 25px;
+    padding: 28px 25px 22px;
     border: 1px solid #e7e7e7;
   }
 
@@ -383,12 +440,17 @@
 
   .login-form__info-wrapper {
     width: 1440px;
-    margin: 0 auto;
+    margin: 76px auto 24px;
     display: grid;
     grid-template-columns: repeat(2, 568px);
     column-gap: 78px;
     box-sizing: border-box;
     padding: 0 110px;
+
+    &--checkbox {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   .login-form__content {
@@ -400,10 +462,12 @@
   }
 
   .login-form__additional-products .login-form__list {
+    max-width: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 78px;
     padding: 0;
+    margin: 60px 110px 40px;
   }
 
   .login-form__submit {
@@ -439,10 +503,20 @@
 
   .login-form__send-wrapper {
     width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 78px;
     padding: 0 110px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+  }
+
+  .login-form__submit {
+    width: 565px;
+    margin: 0;
+    padding: 20px 30px;
+  }
+
+  .login-form__legend--right {
+    margin: 0 0 0 86px;
   }
 }

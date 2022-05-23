@@ -55,7 +55,7 @@
     &--background {
       min-width: 1440px;
       justify-content: space-between;
-      padding: 38px 110px;
+      padding: 0 110px 10px;
       position: relative;
 
       &::after {
@@ -89,5 +89,13 @@
     height: 59px;
     width: 202px;
     z-index: 1;
+  }
+
+  .main-header__logo-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 0;
   }
 }
