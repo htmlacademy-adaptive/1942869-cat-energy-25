@@ -120,7 +120,7 @@
 
 @media (min-width: $tablet-width) {
   .case {
-    background-image: linear-gradient(to bottom, #ffffff 60%, #eaeaea 40%);
+    background-image: linear-gradient(to bottom, #ffffff 58%, #eaeaea 42%);
   }
 
   .case__wrapper {
@@ -147,7 +147,6 @@
 
   .case__results {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -164,11 +163,7 @@
     text-align: center;
     padding: 0;
     z-index: 1;
-    margin: 0 30px 0 0;
-
-    &:last-child {
-      margin-right: 160px;
-    }
+    margin: 0 38px 0 0;
   }
 
   .case__number {
@@ -177,14 +172,14 @@
     line-height: 37px;
     text-transform: uppercase;
     text-align: center;
-    padding: 14px 16px 14px 10px;
+    padding: 14px 16px 18px 14px;
   }
 
   .case__text {
-    width: 140px;
+    min-width: 130px;
     height: 29px;
-    bottom: -36px;
-    left: 12px;
+    bottom: -38px;
+    left: 14px;
     font-size: 14px;
     line-height: 14px;
     color: #000000;
@@ -197,8 +192,16 @@
     align-items: flex-end;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
+    margin: 0 0 0 168px;
     padding: 0;
+  }
+
+  .case__cost-price {
+    padding: 10px 0 0 0;
+  }
+
+  .case__range-show {
+    padding: 0 0 59px 0;
   }
 
   .case__cats-image {
@@ -206,7 +209,7 @@
     width: 592px;
     position: relative;
     display: block;
-    padding: 80px 58px 30px;
+    padding: 32px 52px 20px;
     background-image: none;
 
     &::before {
@@ -214,7 +217,7 @@
       position: absolute;
       background-image: url("..//..//img//index-background//cat-fat.png");
       background-repeat: no-repeat;
-      width: 310px;
+      width: 302px;
       height: 511px;
     }
 
@@ -227,7 +230,7 @@
       height: 511px;
       background-size: cover;
       background-position: -240px 10px;
-      left: 369px;
+      left: 354px;
     }
   }
 
@@ -270,7 +273,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: start;
-    padding: 0;
+    padding: 62px 0 0 0;
     margin: 0;
     position: absolute;
   }
@@ -279,9 +282,8 @@
     position: absolute;
     font-size: 16px;
     line-height: 24px;
-    width: 480px;
-    padding: 0;
-    margin: 220px 0 0 0;
+    margin: 0;
+    padding: 270px 895px 0 0;
   }
 
   .case__information {
@@ -292,14 +294,14 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 311px 0 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 434px 0 0 0;
   }
 
   .case__text {
     width: 140px;
     height: 29px;
-    bottom: -36px;
+    bottom: -38px;
     left: 12px;
     font-size: 14px;
     line-height: 14px;
@@ -308,8 +310,8 @@
   }
 
   .case__range-show {
-    padding: 0;
-    margin-bottom: 65px;
+    margin: 0;
+    padding: 0 0 50px 240px;
   }
 
   .case__cost {
@@ -318,7 +320,7 @@
     justify-content: space-between;
     font-size: 20px;
     line-height: 20px;
-    margin: 55px 0 0 0;
+    margin: 55px 0 68px 0;
     padding: 0;
   }
 
@@ -334,17 +336,20 @@
     padding: 0;
     margin: 0;
     background-image: none;
-  }
 
-  .case__cats-image::after {
-    content: "";
-    position: absolute;
-    background-image: url("..//..//img//index-background//cat-skinny.png");
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 511px;
-    background-size: cover;
-    background-position: -240px 10px;
-    left: 310px;
+    &::before {
+      width: 302px;
+      height: 511px;
+      left: 16px;
+      top: -4px;
+    }
+
+    &::after {
+      width: 300px;
+      height: 511px;
+      background-size: cover;
+      background-position: -240px 10px;
+      left: 320px;
+    }
   }
 }

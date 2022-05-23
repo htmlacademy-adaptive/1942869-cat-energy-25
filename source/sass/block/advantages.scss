@@ -162,9 +162,15 @@
   }
 
   .advantages__items {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(4,1fr);
     column-gap: 79px;
-    margin-bottom: 49px;
+    margin: 0;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 72px 0 32px 0;
   }
 }

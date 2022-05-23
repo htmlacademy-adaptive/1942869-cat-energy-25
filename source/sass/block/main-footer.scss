@@ -1,5 +1,6 @@
 .main-footer__contact--dark {
   background-color: #f2f2f2;
+  padding: 0;
 }
 
 .main-footer__contact-wrapper {
@@ -36,6 +37,17 @@
   }
 }
 
+.main-footer__cantact-common {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $darkgrey;
+  padding: 24px 0 0 0;
+}
+
 .main-footer__contact-title {
   display: block;
   font-family: "OswaldRegular", sans-serif;
@@ -49,12 +61,11 @@
 }
 
 .main-footer__contact-text {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $darkgrey;
-  padding: 26px 0;
+  padding: 0;
+  margin: 0;
+}
+
+.mein-footer__contact-adress {
   margin: 0;
 }
 
@@ -82,21 +93,32 @@
 
   .main-footer__contact-wrapper {
     width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding: 56px 70px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
 
   .main-footer__contact-title {
     font-size: 20px;
     line-height: 26px;
     color: #111111;
-    padding-right: 200px;
+    padding: 4px 0 0 0;
     margin: 0;
   }
 
-  .main-footer__contact-text {
+  .main-footer__cantact-common {
+    display: inline-block;
+    vertical-align: baseline;
     font-size: 16px;
-    line-height: 20px;
-    padding-left: 100px;
+    line-height: 1.2;
+    text-align: end;
+    padding: 2px 0 0 200px;
+  }
+
+  .mein-footer__contact-adress {
+    margin: 22px 0 0 0;
   }
 
   .main-footer__location iframe {
@@ -130,16 +152,21 @@
     position: absolute;
     width: 565px;
     min-height: 198px;
-    padding: 56px 80px;
+    padding: 0;
     background-color: #ffffff;
     margin: 95px 0 0 110px;
   }
 
   .main-footer__contact-title {
-    padding: 0;
+    padding: 60px 0 0 80px;
   }
 
-  .main-footer__contact-text {
+  .main-footer__cantact-common {
+    text-align: start;
+    padding: 54px 30px 0 48px;
+  }
+
+  .mein-footer__contact-adress {
     padding: 0;
   }
 
@@ -150,6 +177,6 @@
   .main-footer__info-wrapper {
     width: 1440px;
     display: flex;
-    padding: 65px 110px;
+    padding: 48px 110px;
   }
 }

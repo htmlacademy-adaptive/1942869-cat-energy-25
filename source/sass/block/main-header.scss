@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 17px;
+  padding: 12px 0 17px;
 }
 
 .main-header__logo img {
@@ -50,12 +50,12 @@
   .main-header__wrapper {
     width: 1440px;
     justify-content: space-between;
-    padding: 53px 110px;
+    padding: 0 110px;
 
     &--background {
       min-width: 1440px;
       justify-content: space-between;
-      padding: 53px 110px;
+      padding: 38px 110px;
       position: relative;
 
       &::after {

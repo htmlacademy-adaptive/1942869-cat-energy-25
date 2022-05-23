@@ -1,15 +1,28 @@
+.product-description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $darkgrey;
+}
+
+.product-description td:nth-child(2n) {
+  text-align: end;
+}
+
+.product-description__content td {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   .product-description {
     font-size: 16px;
     line-height: 16px;
 
     & tr td {
-      padding: 5px;
+      padding: 6px 0 8px;
       border-bottom: 1px solid #cdcdcd;
     }
-  }
-
-  .product-description td:nth-child(2n) {
-    text-align: end;
   }
 }
