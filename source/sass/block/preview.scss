@@ -9,21 +9,6 @@
   box-sizing: border-box;
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -460px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("..//..//img//index-background//index-cat-product.png");
-    background-repeat: no-repeat;
-    background-size: 280px 270px;
-    background-position: center;
-    z-index: 1;
-  }
-
   &::after {
     content: "";
     display: block;
@@ -77,8 +62,23 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 27px 61px 20px 61px;
+  padding: 27px 61px 300px 61px;
   margin: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    background-image: url("..//..//img//index-background//index-cat-product.png");
+    background-repeat: no-repeat;
+    background-size: 280px 270px;
+    z-index: 1;
+  }
 }
 
 .preview__user {
@@ -88,7 +88,7 @@
   line-height: 18px;
   width: 280px;
   padding: 11px 44px;
-  margin: 280px 20px 20px;
+  margin: 0 20px 20px;
   cursor: pointer;
 }
 
@@ -106,7 +106,7 @@
       display: block;
       position: absolute;
       top: 240px;
-      left: 0;
+      left: 30px;
       right: 0;
       bottom: 0;
       background-image: url("..//..//img//index-background//index-cat-product-tablet.png");
@@ -148,6 +148,10 @@
     line-height: 20px;
     color: #000000;
     padding: 41px 80px 0 86px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .preview__header {
@@ -173,7 +177,7 @@
       display: block;
       position: absolute;
       top: -22px;
-      left: 222px;
+      left: 560px;
       right: 0;
       bottom: 0;
       background-image: url("..//..//img//index-background//index-cat-product-dekstop.png");

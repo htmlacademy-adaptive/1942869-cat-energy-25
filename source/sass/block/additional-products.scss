@@ -5,7 +5,7 @@
 
 .additional-products__wrapper {
   width: 320px;
-  padding: 0 20px;
+  padding: 8px 20px 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -46,14 +46,11 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid #cdcdcd;
 }
 
 
 @media (min-width: $tablet-width) {
-  .additional-products .divided-line {
-    display: none;
-  }
-
   .additional-products__wrapper {
     width: 768px;
     padding: 0 30px;

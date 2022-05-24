@@ -170,7 +170,7 @@
 
 .login-form__icon {
   position: absolute;
-  left: 270px;
+  left: 268px;
 
   &--letter {
     stroke: #222222;
@@ -306,7 +306,7 @@
 
   .login-form__title {
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 40px;
     font-family: "OswaldRegular", sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -314,7 +314,7 @@
     color: #000000;
     text-transform: none;
     background-color: #ffffff;
-    margin-left: 41px;
+    margin-left: 30px;
   }
 
   .login-form__programm-filter {
@@ -327,6 +327,18 @@
   .login-form__owner-information {
     border: none;
     padding: 35px 0 25px 0;
+  }
+
+  .login-form__owner .login-form__info-wrapper {
+    padding: 70px 65px 0 70px;
+  }
+
+  .login-form__owner .login-form__info {
+    margin: 0 0 22px 0;
+
+    &:last-child {
+      margin: 0 0 18px 0;
+    }
   }
 
   .login-form__additional-products .login-form__group {
@@ -369,7 +381,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    margin: 10px 0 0 0;
+    margin: 14px 0 0 0;
   }
 }
 

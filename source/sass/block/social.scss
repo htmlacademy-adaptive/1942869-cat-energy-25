@@ -4,7 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
-  padding: 14px 0 12px 0;
+  padding: 12px 0 12px 0;
   margin: 0;
 }
 
@@ -32,5 +32,12 @@
 
   &:disabled {
     fill: #c9e1bb;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 14px 0 12px 0;
+    margin: 0;
   }
 }

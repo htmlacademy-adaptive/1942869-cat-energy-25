@@ -32,7 +32,7 @@
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 32px 0;
 }
 
 .case__item {
@@ -84,8 +84,7 @@
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 40px;
-  margin: 32px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -134,14 +133,14 @@
     font-size: 60px;
     line-height: 60px;
     text-align: start;
-    padding: 60px 0 0 0;
+    padding: 56px 0 0 0;
     margin: 0;
   }
 
   .case__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 63px 0 51px 0;
+    padding: 63px 10px 51px 0;
     margin: 0;
   }
 
@@ -273,7 +272,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: start;
-    padding: 62px 0 0 0;
+    padding: 64px 0 0 0;
     margin: 0;
     position: absolute;
   }
@@ -283,7 +282,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 270px 895px 0 0;
+    padding: 272px 895px 0 0;
   }
 
   .case__information {
@@ -295,7 +294,7 @@
     flex-direction: column;
     align-items: start;
     margin: 0;
-    padding: 434px 0 0 0;
+    padding: 436px 0 0 0;
   }
 
   .case__text {
@@ -310,17 +309,19 @@
   }
 
   .case__range-show {
-    margin: 0;
-    padding: 0 0 50px 240px;
+    padding: 0;
+    margin: 18px 0 0 244px;
+    display: block;
   }
 
   .case__cost {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 20px;
     line-height: 20px;
-    margin: 55px 0 68px 0;
+    margin: 52px 0 70px 0;
     padding: 0;
   }
 

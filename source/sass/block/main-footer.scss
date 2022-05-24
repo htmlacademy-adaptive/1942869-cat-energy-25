@@ -95,7 +95,7 @@
     width: 768px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 56px 70px;
+    padding: 58px 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -122,7 +122,7 @@
   }
 
   .main-footer__location iframe {
-    height: 396px;
+    height: 400px;
   }
 
   .main-footer__info {
@@ -135,7 +135,7 @@
     display: flex;
     align-self: center;
     width: 768px;
-    padding: 60px 30px;
+    padding: 54px 30px 64px;
   }
 
   .main-footer__social {
@@ -151,19 +151,18 @@
   .main-footer__contact-wrapper {
     position: absolute;
     width: 565px;
-    min-height: 198px;
     padding: 0;
     background-color: #ffffff;
     margin: 95px 0 0 110px;
   }
 
   .main-footer__contact-title {
-    padding: 60px 0 0 80px;
+    padding: 65px 0 63px 80px;
   }
 
   .main-footer__cantact-common {
     text-align: start;
-    padding: 54px 30px 0 48px;
+    padding: 62px 30px 40px 48px;
   }
 
   .mein-footer__contact-adress {
@@ -177,6 +176,6 @@
   .main-footer__info-wrapper {
     width: 1440px;
     display: flex;
-    padding: 48px 110px;
+    padding: 56px 110px;
   }
 }
