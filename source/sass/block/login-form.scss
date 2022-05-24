@@ -427,12 +427,12 @@
 
     &--letter {
       left: 640px;
-      bottom: 40px;
+      bottom: 60px;
     }
 
     &--phone {
       left: 1294px;
-      bottom: 40px;
+      bottom: 54px;
     }
   }
 
@@ -447,6 +447,11 @@
 
   .login-form__owner-information {
     padding: 0;
+  }
+
+  .login-form__owner .login-form__info-wrapper {
+    padding: 0 110px;
+    margin: 76px auto 6px;
   }
 
   .login-form__info-wrapper {

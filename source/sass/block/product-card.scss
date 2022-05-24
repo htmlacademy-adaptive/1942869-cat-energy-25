@@ -21,7 +21,7 @@
 
 .product-card__image {
   display: block;
-  padding: 0;
+  padding: 12px 0 0 0;
 
   &--small {
     padding: 26px 0 0 0;
@@ -83,8 +83,8 @@
     width: 161px;
     height: 172px;
     position: absolute;
-    top: -44px;
-    left: 84px;
+    top: -54px;
+    left: 80px;
 
     &--large {
       width: 168px;
@@ -142,7 +142,7 @@
   }
 
   .product-card__image {
-    top: -50px;
+    top: -66px;
     left: 42px;
 
     &--large {
@@ -163,7 +163,7 @@
   }
 
   .product-card__title {
-    padding: 40px 50px 14px;
+    padding: 36px 50px 14px;
     margin: 0;
   }
 

@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: repeat(2, 139px);
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .main-footer__info {
@@ -56,7 +57,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  padding: 26px 0;
+  padding: 24px 0;
   margin: 0;
 }
 
