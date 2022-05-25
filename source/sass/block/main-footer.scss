@@ -66,12 +66,13 @@
   margin: 0;
 }
 
-.mein-footer__contact-adress {
+.main-footer__contact-adress {
   margin: 0;
 }
 
 .main-footer__location iframe {
   height: 362px;
+  width: 100%;
   margin: 0 auto;
   border: none;
   display: block;
@@ -118,12 +119,13 @@
     padding: 2px 0 0 200px;
   }
 
-  .mein-footer__contact-adress {
+  .main-footer__contact-adress {
     margin: 22px 0 0 0;
   }
 
   .main-footer__location iframe {
     height: 400px;
+    width: 100%;
   }
 
   .main-footer__info {
@@ -166,12 +168,13 @@
     padding: 62px 30px 40px 48px;
   }
 
-  .mein-footer__contact-adress {
+  .main-footer__contact-adress {
     padding: 0;
   }
 
   .main-footer__location iframe {
     height: 400px;
+    width: 100%;
   }
 
   .main-footer__info-wrapper {
