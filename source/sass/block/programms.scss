@@ -11,7 +11,7 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  margin: 27px 0 37px 0;
+  margin: 28px 0 37px 0;
 }
 
 .programms__subtitle {
@@ -27,20 +27,20 @@
 @media (min-width: $tablet-width) {
   .programms__header {
     width: 768px;
-    padding: 0 65px;
+    padding: 0 68px 0;
   }
 
   .programms__header-title {
     font-size: 60px;
     line-height: 60px;
-    margin: 65px 0 54px 0;
+    margin: 35px 0 54px 0;
   }
 
   .programms__subtitle {
     font-size: 20px;
     line-height: 30px;
     padding-right: 310px;
-    margin: 0 0 66px 0;
+    margin: 0;
   }
 }
 
@@ -48,5 +48,12 @@
   .programms__header {
     width: 1440px;
     padding: 0 110px;
+  }
+
+  .programms__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 60px 0;
+    padding: 0 850px 0 0;
   }
 }

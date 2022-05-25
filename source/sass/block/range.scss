@@ -82,7 +82,7 @@
     background-color: #ffffff;
     border: 1px solid #cdcdcd;
     border-radius: 50%;
-    left: 50%;
+    left: 197px;
     top: -15px;
     position: relative;
     cursor: pointer;
@@ -109,6 +109,7 @@
 
   .range__button {
     display: block;
+    max-width: 55px;
     box-sizing: border-box;
     text-transform: uppercase;
     text-decoration: none;
@@ -132,5 +133,26 @@
     &:focus {
       border-bottom: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range {
+    margin-top: 35px;
+  }
+
+  .range__bar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .range__toggle {
+    left: 196px;
+    top: -15px;
+  }
+
+  .range__button {
+    margin: 0 28px;
+    padding: 0;
   }
 }

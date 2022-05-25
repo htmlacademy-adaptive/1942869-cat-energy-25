@@ -19,14 +19,13 @@
   flex-direction: column;
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px 0;
 }
 
 .advantages__item {
   min-height: 60px;
   position: relative;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 
@@ -76,19 +75,19 @@
 
   .advantages__items {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
-    column-gap: 153px;
-    row-gap: 37px;
+    grid-template-columns: repeat(2, 249px);
+    column-gap: 136px;
+    row-gap: 36px;
     counter-reset: program;
   }
 
   .advantages__item {
     display: grid;
-    grid-template-columns: 80px 150px;
+    grid-template-columns: 80px 169px;
     grid-template-rows: 40px 80px 31px min-content 57px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 37px;
+    margin: 0;
     position: relative;
     counter-increment: program;
 
@@ -108,12 +107,25 @@
       color: #f2f2f2;
       z-index: -1;
     }
+
+    &--leaf::after {
+      right: 26px;
+    }
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 12px 0 32px 0;
   }
 
   .advantages__description {
     grid-row: 3/5;
     grid-column: 1/-1;
-    padding-top: 31px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 34px 0 0 0;
     margin: 0;
 
     &::before {
@@ -122,6 +134,22 @@
       left: 0;
       right: 0;
       bottom: 0;
+
+      &--leaf::before {
+        background-image: url("..//..//img//advantages//leaf-tablet.svg");
+      }
+
+      &--tube::before {
+        background-image: url("..//..//img//advantages//tube-tablet.svg");
+      }
+
+      &--meal::before {
+        background-image: url("..//..//img//advantages//meal-tablet.svg");
+      }
+
+      &--time::before {
+        background-image: url("..//..//img//advantages//time-tablet.svg");
+      }
     }
   }
 }
@@ -133,9 +161,15 @@
   }
 
   .advantages__items {
-    display: flex;
-    flex-direction: row;
-    column-gap: 79px;
-    margin-bottom: 49px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 76px;
+    margin: 0;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 68px 0 32px 0;
   }
 }

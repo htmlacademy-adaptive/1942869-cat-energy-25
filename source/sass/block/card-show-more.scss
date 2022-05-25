@@ -9,7 +9,7 @@
     height: 1px;
     background-color: #ebebeb;
     left: -20px;
-    top: 270px;
+    top: 204px;
   }
 }
 
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   height: 30px;
   width: 30px;
-  margin: 30px 125px;
+  margin: 25px 125px 20px;
   cursor: pointer;
 }
 
@@ -29,7 +29,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  padding-left: 35px;
+  padding-left: 38px;
 }
 
 .card-show-more__subtitle {
@@ -38,14 +38,19 @@
   font-size: 12px;
   line-height: 16px;
   color: $darkgrey;
-  padding-left: 30px;
+  margin: 0;
+  padding: 10px 0 20px 28px;
 }
 
 .card-show-more__show-all {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   width: 279px;
   background-color: #f2f2f2;
   color: #444444;
-  padding: 10px 94px;
+  padding: 10px 0;
 
   &:hover {
     background-color: #ebebeb;
@@ -78,13 +83,14 @@
   }
 
   .card-show-more__show-all {
-    margin: 87px 0 38px;
+    width: 249px;
+    margin: 86px 0 34px;
   }
 
   .card-show-more__title {
     font-size: 20px;
     line-height: 22px;
-    padding: 45px 80px 0;
+    padding: 50px 80px 0;
     text-align: center;
   }
 
@@ -105,17 +111,17 @@
   }
 
   .card-show-more__title {
-    padding: 45px 40px 0;
+    padding: 38px 40px 2px;
   }
 
   .card-show-more__subtitle {
-    padding: 23px 20px 0;
+    padding: 20px 20px 0;
     margin: 0;
   }
 
   .card-show-more__show-all {
     width: 169px;
-    margin: 80px 38px 41px;
+    margin: 82px 38px 32px;
     padding: 10px 39px;
   }
 }

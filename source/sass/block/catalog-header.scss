@@ -1,6 +1,6 @@
 .catalog-header {
   width: 320px;
-  padding: 29px 0 39px 20px;
+  padding: 26px 20px 2px;
   margin: 0 auto;
   box-sizing: border-box;
   border-top: 1px solid #d9d9d9;
@@ -29,6 +29,7 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
+    padding: 30px 0 0 0;
   }
 }
 
@@ -36,5 +37,10 @@
   .catalog-header {
     width: 1440px;
     padding: 0 110px;
+  }
+
+  .catalog-header__title {
+    margin: 0;
+    padding: 32px 0 0 0;
   }
 }
