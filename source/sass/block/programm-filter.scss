@@ -38,7 +38,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: $blackgrey;
 }
 
 .programm-filter__input[type="radio"]:checked + .programm-filter__mark::before {
@@ -149,7 +149,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #000000;
+    color: $blackgrey;
     padding: 0;
     margin: 0;
   }
