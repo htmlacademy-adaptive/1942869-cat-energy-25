@@ -30,7 +30,7 @@
 @media (min-resolution: 2dppx) {
   .preview__wrapper {
     &::before {
-      background-image: url("..//..//img//index-background//index-cat-product@2x.png");
+      background-image: url("..//..//img//index-background//index-cat-product@2x.webp");
       background-repeat: no-repeat;
       background-size: 280px 270px;
     }
@@ -74,7 +74,7 @@
     left: 20px;
     right: 0;
     bottom: 0;
-    background-image: url("..//..//img//index-background//index-cat-product.png");
+    background-image: url("..//..//img//index-background//index-cat-product.webp");
     background-repeat: no-repeat;
     background-size: 280px 270px;
     z-index: 1;
@@ -109,7 +109,7 @@
       left: 30px;
       right: 0;
       bottom: 0;
-      background-image: url("..//..//img//index-background//index-cat-product-tablet.png");
+      background-image: url("..//..//img//index-background//index-cat-product-tablet.webp");
       background-repeat: no-repeat;
       background-size: 709px 609px;
       background-position-y: top;
@@ -124,7 +124,7 @@
   @media (min-resolution: 2dppx) {
     .preview__wrapper {
       &::before {
-        background-image: url("..//..//img//index-background//index-cat-product-tablet@2x.png");
+        background-image: url("..//..//img//index-background//index-cat-product-tablet@2x.webp");
         background-size: 709px 609px;
       }
     }

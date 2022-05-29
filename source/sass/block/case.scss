@@ -101,7 +101,7 @@
 
 .case__cats-image {
   margin-top: 40px;
-  background-image: url("..//..//img//index-background//cat-fat-mobile.png");
+  background-image: url("..//..//img//index-background//cat-fat-mobile.webp");
   background-repeat: no-repeat;
   background-position: center;
   width: 280px;
@@ -111,7 +111,7 @@
 
 @media (min-resolution: 2dppx) {
   .case__cats-image {
-    background-image: url("..//..//img//index-background//cat-fat-mobile@2x.png");
+    background-image: url("..//..//img//index-background//cat-fat-mobile@2x.webp");
     width: 280px;
     height: 232px;
   }
@@ -214,7 +214,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("..//..//img//index-background//cat-fat.png");
+      background-image: url("..//..//img//index-background//cat-fat.webp");
       background-repeat: no-repeat;
       width: 302px;
       height: 511px;
@@ -223,7 +223,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("..//..//img//index-background//cat-skinny.png");
+      background-image: url("..//..//img//index-background//cat-skinny.webp");
       background-repeat: no-repeat;
       width: 300px;
       height: 511px;
@@ -237,7 +237,7 @@
     .case__cats-image {
 
       &::before {
-        background-image: url("..//..//img//index-background//cat-fat@2x.png");
+        background-image: url("..//..//img//index-background//cat-fat@2x.webp");
         width: 310px;
         height: 511px;
         background-position: 0% 50%;
@@ -245,7 +245,7 @@
       }
 
       &::after {
-        background-image: url("..//..//img//index-background//cat-skinny@2x.png");
+        background-image: url("..//..//img//index-background//cat-skinny@2x.webp");
         background-repeat: no-repeat;
         width: 300px;
         height: 511px;
