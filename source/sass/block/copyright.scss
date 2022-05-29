@@ -17,12 +17,12 @@
   }
 
   &:focus {
-    color: #68b738;
+    color: $darkgrey;
     fill: #68b738;
   }
 
-  &:disabled {
-    color: #c9e1bb;
+  &:active {
+    color: #bebebe;
     fill: #c9e1bb;
   }
 }
