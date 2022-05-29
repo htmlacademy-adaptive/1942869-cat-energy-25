@@ -20,11 +20,11 @@
               <img src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy»">
             </picture>
           </a>
-          <a class="main-header__main-logo main-logo">
+          <a class="main-header__main-logo main-logo" href="index.html">
             <img class="main-logo__image" src="img/main-logo-cat-energy.svg" width="101" height="18" alt="Главный логотип «Cat Energy»">
           </a>
         </section>
-        <nav class="main-navigation main-navigation--closed">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -116,14 +116,14 @@
                 <article class="login-form__info-wrapper">
                   <p class="login-form__info">
                     <label class="login-form__label" for="owner-email">E-mail:&#42;</label>
-                    <input class="login-form__content login-form__content--owner login-form__input" type="text" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+                    <input class="login-form__content login-form__content--owner login-form__input" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
                     <svg class ="login-form__icon login-form__icon--letter" width="19" height="14">
                       <use href="./img/sprite.svg#letter"></use>
                     </svg>
                   </p>
                   <p class="login-form__info">
                     <label class="login-form__label" for="owner-phone">Телефон:&#42;</label>
-                    <input class="login-form__content login-form__content--owner login-form__input" type="text" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+                    <input class="login-form__content login-form__content--owner login-form__input" type="number" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
                     <svg class ="login-form__icon login-form__icon--phone" width="20" height="20">
                       <use href="./img/sprite.svg#phone"></use>
                     </svg>
@@ -206,14 +206,16 @@
         </div>
       </div>
       <div class="main-footer__location">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1LKB7LotwXf6FdBdkPBkLYZYyKUSkcuPP&ehbc=2E312F" width="320" height="362"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1LKB7LotwXf6FdBdkPBkLYZYyKUSkcuPP&ehbc=2E312F"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Офис компании по адресу улица Большая Конюшенная, дом 19/85, Санкт-Петербург"
+        width="320" height="362"></iframe>
       </div>
       <div class="main-footer__info">
         <div class="main-footer__info-wrapper">
           <a class="main-footer__logo" href="index.html">
             <img class="main-footer__image" src="img/footer-logo.svg" width="128" height="24" alt="Главный логотип «Cat Energy»">
           </a>
-          <hr class="divided-line">
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
@@ -242,7 +244,6 @@
               </li>
             </ul>
           </div>
-          <hr class="divided-line">
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
               <svg class="copyright__img" width="27" height="34" >
