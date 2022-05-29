@@ -29,12 +29,16 @@
   height: 24px;
   cursor: pointer;
 
-  &:focus {
-    opacity: 0.6;
+  &:hover {
+    opacity: 1;
   }
 
-  &:disabled {
+  &:focus {
     opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
