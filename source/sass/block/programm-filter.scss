@@ -56,6 +56,7 @@
 
 .programm-filter__input[type="radio"] + .programm-filter__mark {
   border-radius: 50%;
+  border: 2px solid #cdcdcd;
 }
 
 .programm-filter__input[type="checkbox"]:checked + .programm-filter__mark::before {
@@ -84,6 +85,10 @@
   border: 2px solid #bababa;
 }
 
+.programm-filter__input[type="radio"]:focus + .programm-filter__mark {
+  border: 2px solid #bababa;
+}
+
 .programm-filter__input[type="radio"]:disabled + .programm-filter__mark + .programm-filter__text {
   color: #bdbdbd;
 }
@@ -92,13 +97,17 @@
   opacity: 0.5;
 }
 
+.programm-filter__input:focus-visible + .programm-filter__label {
+  outline: 2px solid #bababa;
+  outline-offset: 2px;
+}
+
 .programm-filter__input[type="checkbox"]:checked:hover + .programm-filter__mark {
   border: 2px solid #bababa;
 }
 
-.programm-filter__input[type="checkbox"]:checked:focus-visible + .programm-filter__mark {
-  border: none;
-  outline: none;
+.programm-filter__input[type="checkbox"]:checked:focus + .programm-filter__mark {
+  border: 2px solid #bababa;
 }
 
 .programm-filter__input[type="checkbox"]:disabled + .programm-filter__mark + .programm-filter__text {

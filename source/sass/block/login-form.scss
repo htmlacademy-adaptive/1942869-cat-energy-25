@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 0 12px 0;
+  position: relative;
 }
 
 .login-form__info-wrapper {
@@ -39,7 +40,6 @@
   font-size: 16px;
   line-height: 18px;
   color: $darkgrey;
-  position: relative;
 }
 
 .login-form__content {
@@ -178,10 +178,11 @@
 }
 
 .login-form__icon {
-  position: absolute;
-  left: 268px;
+  position: relative;
 
   &--letter {
+    position: absolute;
+    right: 14px;
     stroke: #222222;
     fill: none;
   }
@@ -273,13 +274,13 @@
   }
 
   .login-form__content--owner {
-    padding: 8px 20px 12px;
+    padding: 8px 50px 12px 20px;
     margin: 0 0 0 17px;
   }
 
   .login-form__icon {
     position: absolute;
-    left: 666px;
+    left: 595px;
   }
 
   .login-form__info-wrapper {
@@ -416,6 +417,15 @@
 
   .login-form__info {
     margin: 0 0 8px 0;
+
+    &--icon {
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: 14px;
+      }
+    }
   }
 
   .login-form__programm-filter {
@@ -428,20 +438,21 @@
   .login-form__label,
   .login-form__content {
     margin-bottom: 13px;
-    position: relative;
   }
 
   .login-form__icon {
-    position: absolute;
-
-    &--letter {
-      left: 640px;
-      bottom: 60px;
-    }
+    position: relative;
+    left: 530px;
+    top: 16px;
 
     &--phone {
-      left: 1294px;
-      bottom: 54px;
+      left: 536px;
+      top: 16px;
+    }
+
+    &--letter {
+      left: 536px;
+      top: 16px;
     }
   }
 
