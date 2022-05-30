@@ -55,6 +55,15 @@
     width: 100%;
     margin: 6px 0 0 0;
     padding: 10px 12px 50px 15px;
+    border: 1px solid #e7e7e7;
+
+    &:hover {
+      border: 1px solid $darkgrey;
+    }
+
+    &:focus {
+      border: 1px solid #cdcdcd;
+    }
   }
 }
 
@@ -401,7 +410,6 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(2, 568px);
-    grid-template-rows: 200px;
     column-gap: 80px;
     margin-bottom: 69px;
   }

@@ -96,6 +96,11 @@
   border: 2px solid #bababa;
 }
 
+.programm-filter__input[type="checkbox"]:checked:focus-visible + .programm-filter__mark {
+  border: none;
+  outline: none;
+}
+
 .programm-filter__input[type="checkbox"]:disabled + .programm-filter__mark + .programm-filter__text {
   color: #bdbdbd;
 }
