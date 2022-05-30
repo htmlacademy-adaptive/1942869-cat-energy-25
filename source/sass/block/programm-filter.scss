@@ -34,11 +34,11 @@
 }
 
 .programm-filter__text {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: $blackgrey;
 }
 
 .programm-filter__input[type="radio"]:checked + .programm-filter__mark::before {
@@ -56,6 +56,7 @@
 
 .programm-filter__input[type="radio"] + .programm-filter__mark {
   border-radius: 50%;
+  border: 2px solid #cdcdcd;
 }
 
 .programm-filter__input[type="checkbox"]:checked + .programm-filter__mark::before {
@@ -84,6 +85,10 @@
   border: 2px solid #bababa;
 }
 
+.programm-filter__input[type="radio"]:focus + .programm-filter__mark {
+  border: 2px solid #bababa;
+}
+
 .programm-filter__input[type="radio"]:disabled + .programm-filter__mark + .programm-filter__text {
   color: #bdbdbd;
 }
@@ -92,7 +97,16 @@
   opacity: 0.5;
 }
 
+.programm-filter__input:focus-visible + .programm-filter__label {
+  outline: 2px solid #bababa;
+  outline-offset: 2px;
+}
+
 .programm-filter__input[type="checkbox"]:checked:hover + .programm-filter__mark {
+  border: 2px solid #bababa;
+}
+
+.programm-filter__input[type="checkbox"]:checked:focus + .programm-filter__mark {
   border: 2px solid #bababa;
 }
 
@@ -145,11 +159,11 @@
   }
 
   .programm-filter__text {
-    font-family: "OswaldRegular", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #000000;
+    color: $blackgrey;
     padding: 0;
     margin: 0;
   }
